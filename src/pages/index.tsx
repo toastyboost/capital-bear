@@ -12,11 +12,7 @@ const seoProps = {
 const IndexPage: React.FC = () => {
   return (
     <>
-      <Seo {...seoProps} />
-      <Layout>
-        <Async />
-        <Fonts />
-      </Layout>
+      <Layout></Layout>
     </>
   );
 };
