@@ -2,11 +2,13 @@ import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
 
 import { FontsStyles } from "./fonts";
+import { SlickStyles } from './slick';
 
 export const GlobalStyles = createGlobalStyle`
   ${normalize}
   ${FontsStyles}
-
+  ${SlickStyles}
+  
   * {
     margin: 0;
     padding: 0;
@@ -15,24 +17,13 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --main-font: "Roboto", sans-serif;
-    --title-font: "Merriweather", serif;
-    --primary: #fff;
-    --secondary: #fff;
-    --warning: #fff;
-    --highlight: #f3f8fe;
-    --text-color: rgba(40, 46, 52, 0.8);
-    --text-color--secondary: rgba(56, 56, 56, 0.6);
-    --title-color: rgba(0, 0, 0, 1);
-    --link-active: #03a9f4;
-    --link-hover: #2196f3;
-    --border-color: rgba(0, 0, 0, 0.05);
-    --body-bg: #fff;
-    --block-bg: #fff;
-    --red: #ff4748;
-    --green: #2e9e22;
-    --blue: #157efb;
-    --box-shadow: 0 2px 6px 4px rgba(0, 0, 0, 0.03);
+    --main-font: "Gilroy";
+    --text-font: "Manrope";
+    --primary: rgb(105, 57, 207);
+    --warning: rgb(251, 86, 81);
+    --text: rgb(37, 45, 61);
+    --border: rgba(0, 0, 0, 0.05);
+    --block-bg: rgb(39, 38, 45);
   }
 
   body,
@@ -60,8 +51,8 @@ export const GlobalStyles = createGlobalStyle`
   h3,
   h4 {
     font-family: var(--main-font);
-    line-height: 1.1;
     color: var(--text-color);
+    margin: 0;
   }
 
   p {
@@ -108,6 +99,6 @@ export const GlobalStyles = createGlobalStyle`
   section,
   header,
   footer {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
 `;

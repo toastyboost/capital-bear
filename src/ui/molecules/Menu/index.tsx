@@ -1,6 +1,6 @@
 import * as React from "react";
-
-import { MenuContainer, MenuLink, AnchorLink } from "./styles";
+import styled from "styled-components";
+import { Link } from "~/ui/atoms";
 
 type MenuProps = {
   className?: string;
@@ -9,10 +9,18 @@ type MenuProps = {
 
 export const Menu: React.FC<MenuProps> = ({ className, data }) => {
   return (
-    <MenuContainer className={className}>
-      {data.map(({ path, title }, key) => {
-        return <>{title}</>;
+    <Wrap className={className}>
+      {data.map(({ path, title }) => {
+        return <MenuLink key={path}>{title}</MenuLink>;
       })}
-    </MenuContainer>
+    </Wrap>
   );
 };
+
+const Wrap = styled.div`
+  display: flex;
+`;
+
+const MenuLink = styled(Link)`
+  margin: 0 21px;
+`;

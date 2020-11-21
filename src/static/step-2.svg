@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>st_2</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="286.47619" height="214.095238" rx="5.33333333"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="320" transform="translate(0.000000, -2471.000000)">
+            <g id="03_steps" transform="translate(0.000000, 1272.000000)">
+                <g id="Group-8" transform="translate(0.000000, 914.000000)">
+                    <g id="st_2" transform="translate(0.000000, 285.000000)">
+                        <rect id="Rectangle-Copy" fill="#F9F9FB" x="0" y="0" width="320" height="320"></rect>
+                        <g id="Group" transform="translate(16.761905, 49.523810)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#FAFAFC" xlink:href="#path-1"></use>
+                            <g mask="url(#mask-2)">
+                                <g transform="translate(21.333333, 15.238095)">
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 27.428571)">
+                                        <g id="Group-2">
+                                            <rect id="Rectangle" stroke="#804AE5" stroke-width="0.761904762" fill="#FAFAFC" x="0.380952381" y="0.380952381" width="151.619048" height="57.1428571" rx="12.1904762"></rect>
+                                            <g id="logo" transform="translate(9.142857, 9.142857)">
+                                                <circle id="Oval" fill="#FFFFFF" cx="19.8095238" cy="19.8095238" r="19.8095238"></circle>
+                                                <g id="mastercard" transform="translate(5.333333, 10.666667)" fill-rule="nonzero">
+                                                    <circle id="Oval" fill="#EE0005" cx="9.36741071" cy="9.56138393" r="8.83660714"></circle>
+                                                    <circle id="Oval" fill="#F9A000" cx="20.3462054" cy="9.56138393" r="8.83660714"></circle>
+                                                    <path d="M11.5097321,9.56125 C11.5097321,12.3670536 12.8176786,14.8671652 14.856875,16.4858259 C16.8960045,14.8670982 18.2040179,12.3670536 18.2040179,9.56125 C18.2040179,6.75544643 16.8960714,4.25533482 14.856875,2.63667411 C12.8177455,4.25546875 11.5097321,6.75551339 11.5097321,9.56125 Z" id="Path" fill="#FF6300"></path>
+                                                </g>
+                                            </g>
+                                            <text id="Mastercard" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                                <tspan x="57.1428571" y="26.7142857">Mastercard</tspan>
+                                            </text>
+                                            <text id="Instantly" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                                <tspan x="57.1428571" y="41.4761905">**** 2596</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(168.380952, 27.428571)">
+                                        <g id="Group-2">
+                                            <rect id="Rectangle" fill="#EDEBF8" opacity="0.5" x="0" y="0" width="152.380952" height="57.9047619" rx="12.1904762"></rect>
+                                            <g id="logo" transform="translate(9.142857, 9.142857)">
+                                                <circle id="Oval" fill="#FFFFFF" cx="19.8095238" cy="19.8095238" r="19.8095238"></circle>
+                                                <g id="visa" transform="translate(3.809524, 3.809524)" fill-rule="nonzero">
+                                                    <circle id="Oval" fill="#F3F2F2" cx="15.8462808" cy="15.8469494" r="15.8456121"></circle>
+                                                    <g id="Group" transform="translate(5.215672, 11.568093)" fill="#293688">
+                                                        <polygon id="Path" points="6.51845298 7.31845679 7.73096293 0.158676784 9.69399468 0.158676784 8.48155159 7.31845679"></polygon>
+                                                        <path d="M15.46995,0.343766264 C15.0809144,0.198663601 14.4714163,0.0432633287 13.7102626,0.0432633287 C11.7701664,0.0432633287 10.4035935,1.0145819 10.3918248,2.40616325 C10.3810591,3.43472047 11.367356,4.00844437 12.1124616,4.35120762 C12.8765575,4.70146004 13.1335296,4.926202 13.129785,5.23920917 C13.1250374,5.71911784 12.519284,5.9385104 11.9548547,5.9385104 C11.1692274,5.93824293 10.7516393,5.82991743 10.1068352,5.56271456 L9.85387508,5.44863845 L9.57818002,7.05145451 C10.0368248,7.2513886 10.8849733,7.42477625 11.7654188,7.4335359 C13.8288188,7.43306783 15.1689121,6.47378543 15.1839573,4.98731897 C15.1914465,4.17293863 14.6682745,3.55314297 13.5356044,3.04200713 C12.8492755,2.71121318 12.4289459,2.49028267 12.4334928,2.15454052 C12.4334928,1.85704662 12.7894959,1.53882378 13.5578713,1.53882378 C14.199867,1.52879364 14.664998,1.66794509 15.027554,1.81304775 L15.2032152,1.89562922 L15.46995,0.343766264 L15.46995,0.343766264 Z" id="Path"></path>
+                                                        <path d="M18.8168733,0.158676784 C18.3465267,0.158676784 18.0067056,0.302308361 17.8000179,0.768442309 L14.8906761,7.31872426 L16.9691213,7.31872426 L17.3732021,6.22156089 L19.8564637,6.22156089 L20.0871568,7.31872426 L21.9349089,7.31872426 L20.318385,0.158877387 L18.8169402,0.158877387 L18.8168733,0.158676784 L18.8168733,0.158676784 Z M17.9246591,4.78892284 C18.086813,4.3766173 18.7065418,2.78777657 18.7065418,2.78777657 C18.695308,2.80656636 18.8678933,2.373465 18.966991,2.10472417 L19.0998569,2.72171139 C19.0998569,2.72171139 19.4753853,4.43084691 19.5542222,4.78912344 L17.9246591,4.78912344 L17.9246591,4.78892284 Z" id="Shape"></path>
+                                                        <path d="M2.93856298,5.06662393 L2.7656434,4.08507462 C2.40736686,2.94090334 1.29542576,1.70291684 0.0494151467,1.0826531 L1.78382662,7.31845679 L3.86273989,7.31845679 L6.980508,0.158676784 L4.9020628,0.158676784 L2.93856298,5.06662393 Z" id="Path"></path>
+                                                    </g>
+                                                    <g id="Group" transform="translate(1.738557, 11.701828)" fill="#F7981D">
+                                                        <path d="M1.39238376,0.0249416099 L1.39238376,0.140555668 C3.85565193,0.733002488 5.56579047,2.23076957 6.24282478,3.95140631 L5.53101932,0.635977619 C5.41219562,0.18288285 5.05211366,0.0407223604 4.6260334,0.0250084775 L1.39238376,0.0249416099 L1.39238376,0.0249416099 Z" id="Path"></path>
+                                                        <path d="M14.1066536,19.9906001 C20.2226306,19.9906001 25.5256314,16.5237831 28.1670348,11.4499375 L0.0465398405,11.4499375 C2.68814386,16.5237831 7.99094411,19.9906001 14.1066536,19.9906001 Z" id="Path"></path>
+                                                    </g>
+                                                    <path d="M15.8452109,0 C9.82632563,0 4.59132912,3.35568298 1.90893587,8.29846814 L29.7820208,8.29846814 C27.0992932,3.35595045 21.8640961,0 15.8452109,0 Z" id="Path" fill="#293688"></path>
+                                                </g>
+                                            </g>
+                                            <text id="Mastercard" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                                <tspan x="57.1428571" y="26.7142857">Visa</tspan>
+                                            </text>
+                                            <text id="Instantly" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                                <tspan x="57.1428571" y="41.4761905">Instantly</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <text id="Payment-methods" fill="none" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500">
+                                        <tspan x="0" y="13" fill="#262626">Payment methods</tspan>
+                                    </text>
+                                    <text id="$10" fill="none" font-family="Manrope-SemiBold, Manrope" font-size="19.8095238" font-weight="500">
+                                        <tspan x="59.4285714" y="145.952381" fill="#200839">$10</tspan>
+                                    </text>
+                                    <text id="Amount" fill="none" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500">
+                                        <tspan x="1.52380952" y="114.333333" fill="#262626">Amount</tspan>
+                                    </text>
+                                    <rect id="Rectangle" fill="#F6F5FB" fill-rule="evenodd" x="1.52380952" y="124.190476" width="28.1904762" height="28.1904762" rx="7.61904762"></rect>
+                                    <rect id="Rectangle" fill="#BCB4C3" fill-rule="evenodd" x="15.2380952" y="131.809524" width="1.52380952" height="12.952381" rx="0.761904762"></rect>
+                                    <path d="M16,131.809524 C16.4207884,131.809524 16.7619048,132.15064 16.7619048,132.571429 L16.7619048,144 C16.7619048,144.420788 16.4207884,144.761905 16,144.761905 C15.5792116,144.761905 15.2380952,144.420788 15.2380952,144 L15.2380952,132.571429 C15.2380952,132.15064 15.5792116,131.809524 16,131.809524 Z" id="Rectangle-Copy-2" fill="#BCB4C3" fill-rule="evenodd" transform="translate(16.000000, 138.285714) rotate(90.000000) translate(-16.000000, -138.285714) "></path>
+                                    <g id="amount" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1.523810, 168.380952)">
+                                        <g id="Group">
+                                            <rect id="Rectangle-Copy-2" fill="#DDD5F3" x="0" y="0" width="53.3333333" height="23.6190476" rx="11.8095238"></rect>
+                                            <text id="10" font-family="Manrope-Medium, Manrope" font-size="12.1904762" font-weight="400" fill="#200839">
+                                                <tspan x="21.3333333" y="16.8095238">10</tspan>
+                                            </text>
+                                            <text id="$" opacity="0.300000012" font-family="Manrope-SemiBold, Manrope" font-size="8.38095238" font-weight="500" fill="#200839">
+                                                <tspan x="14.4761905" y="15.8571429">$</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(62.476190, 168.380952)">
+                                        <g id="Group" transform="translate(3.047619, 0.000000)">
+                                            <rect id="Rectangle-Copy-2" stroke="#EBEBEE" fill="#FFFFFF" x="0.5" y="0.5" width="52.3333333" height="22.6190476" rx="11.3095238"></rect>
+                                            <text id="10" font-family="Manrope-Medium, Manrope" font-size="12.1904762" font-weight="400" fill="#200839">
+                                                <tspan x="21.3333333" y="16.8095238">20</tspan>
+                                            </text>
+                                            <text id="$" opacity="0.300000012" font-family="Manrope-SemiBold, Manrope" font-size="8.38095238" font-weight="500" fill="#200839">
+                                                <tspan x="14.4761905" y="15.8571429">$</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(126.476190, 168.380952)">
+                                        <g id="Group" transform="translate(3.047619, 0.000000)">
+                                            <rect id="Rectangle-Copy-2" stroke="#EBEBEE" fill="#FFFFFF" x="0.5" y="0.5" width="52.3333333" height="22.6190476" rx="11.3095238"></rect>
+                                            <text id="10" font-family="Manrope-Medium, Manrope" font-size="12.1904762" font-weight="400" fill="#200839">
+                                                <tspan x="21.3333333" y="16.8095238">30</tspan>
+                                            </text>
+                                            <text id="$" opacity="0.300000012" font-family="Manrope-SemiBold, Manrope" font-size="8.38095238" font-weight="500" fill="#200839">
+                                                <tspan x="14.4761905" y="15.8571429">$</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(190.476190, 168.380952)">
+                                        <g id="Group" transform="translate(3.047619, 0.000000)">
+                                            <rect id="Rectangle-Copy-2" stroke="#EBEBEE" fill="#FFFFFF" x="0.5" y="0.5" width="52.3333333" height="22.6190476" rx="11.3095238"></rect>
+                                            <text id="10" font-family="Manrope-Medium, Manrope" font-size="12.1904762" font-weight="400" fill="#200839">
+                                                <tspan x="21.3333333" y="16.8095238">40</tspan>
+                                            </text>
+                                            <text id="$" opacity="0.300000012" font-family="Manrope-SemiBold, Manrope" font-size="8.38095238" font-weight="500" fill="#200839">
+                                                <tspan x="14.4761905" y="15.8571429">$</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(254.476190, 168.380952)">
+                                        <g id="Group" transform="translate(3.047619, 0.000000)">
+                                            <rect id="Rectangle-Copy-2" stroke="#EBEBEE" fill="#FFFFFF" x="0.5" y="0.5" width="52.3333333" height="22.6190476" rx="11.3095238"></rect>
+                                            <text id="10" font-family="Manrope-Medium, Manrope" font-size="12.1904762" font-weight="400" fill="#200839">
+                                                <tspan x="21.3333333" y="16.8095238">40</tspan>
+                                            </text>
+                                            <text id="$" opacity="0.300000012" font-family="Manrope-SemiBold, Manrope" font-size="8.38095238" font-weight="500" fill="#200839">
+                                                <tspan x="14.4761905" y="15.8571429">$</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                    <rect id="Rectangle-Copy" fill="#F6F5FB" fill-rule="evenodd" x="124.190476" y="124.190476" width="28.1904762" height="28.1904762" rx="7.61904762"></rect>
+                                    <g id="Group-4" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(137.142857, 21.333333)">
+                                        <circle id="Oval" fill="#FAFAFC" cx="9.14285714" cy="9.14285714" r="9.14285714"></circle>
+                                        <path d="M9.14285714,2.95238095 C5.72395155,2.95238095 2.95238095,5.72395155 2.95238095,9.14285714 C2.95238095,12.5617627 5.72395155,15.3333333 9.14285714,15.3333333 C12.5617627,15.3333333 15.3333333,12.5617627 15.3333333,9.14285714 C15.3293837,5.72558887 12.5601254,2.95633057 9.14285714,2.95238095 Z M12.0911458,8.05887262 L8.59877262,11.392206 C8.41434812,11.5676774 8.12471497,11.5676774 7.94029048,11.392206 L6.19456845,9.72553929 C6.0046598,9.54362629 5.99798803,9.24226845 6.17965979,9.05212901 C6.36133155,8.86198958 6.66268068,8.85493524 6.8530506,9.03636548 L8.26953095,10.3891369 L11.4326637,7.36969881 C11.6230336,7.18826857 11.9243827,7.19532291 12.1060545,7.38546235 C12.2877263,7.57560178 12.2810545,7.87695962 12.0911458,8.05887262 Z" id="Shape" fill="#6ED37E" fill-rule="nonzero"></path>
+                                    </g>
+                                    <path d="M138.666667,131.809524 C139.087455,131.809524 139.428571,132.15064 139.428571,132.571429 L139.428571,144 C139.428571,144.420788 139.087455,144.761905 138.666667,144.761905 C138.245878,144.761905 137.904762,144.420788 137.904762,144 L137.904762,132.571429 C137.904762,132.15064 138.245878,131.809524 138.666667,131.809524 Z" id="Rectangle-Copy-3" fill="#BCB4C3" fill-rule="evenodd" transform="translate(138.666667, 138.285714) rotate(90.000000) translate(-138.666667, -138.285714) "></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

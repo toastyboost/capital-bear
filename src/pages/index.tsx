@@ -1,20 +1,17 @@
 import * as React from "react";
 
 import { Layout } from "~/ui/templates";
+import { Hero, Steps, Toolbox, TrendingAssets } from "~/ui/organisms";
 
-import { Fonts, Async, Seo } from "~/ui/organisms";
-
-const seoProps = {
-  title: "Main",
-  desc: "Main page",
-};
-
-const IndexPage: React.FC = () => {
+const Index: React.FC = () => {
   return (
-    <>
-      <Layout></Layout>
-    </>
+    <Layout>
+      <Hero />
+      <Steps />
+      <Toolbox />
+      <TrendingAssets />
+    </Layout>
   );
 };
 
-export default IndexPage;
+export default Index;

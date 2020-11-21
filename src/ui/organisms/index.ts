@@ -1,5 +1,6 @@
 export { Footer } from "./Footer";
 export { Header } from "./Header";
-export { Seo } from "./Seo";
-export { Fonts } from "./Fonts";
-export { Async } from "./Async";
+export { Hero } from "./Hero";
+export { Steps } from "./Steps"
+export { Toolbox } from './Toolbox'
+export { TrendingAssets } from './Assets'

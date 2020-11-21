@@ -1,9 +1,8 @@
 import * as React from "react";
+import styled from "styled-components";
 
 import { Header, Footer } from "~/ui/organisms";
 import { GlobalStyles } from "~/styles";
-
-import { Main } from "./styles";
 
 export const Layout: React.FC = ({ children }) => (
   <>
@@ -15,3 +14,5 @@ export const Layout: React.FC = ({ children }) => (
     </>
   </>
 );
+
+const Main = styled.main``;

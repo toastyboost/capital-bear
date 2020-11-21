@@ -7,6 +7,10 @@ dotenv.config({
 const siteUrl = process.env.WEBSITE_URL;
 
 module.exports = {
+  proxy: {
+    prefix: "/api",
+    url: "https://fininfo.iqoption.com",
+  },
   siteMetadata: {
     siteUrl,
     themeColor: "#2c52da",
@@ -57,12 +61,12 @@ module.exports = {
         extensions: ["js"],
       },
     },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: 0,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId:'',
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-react-helmet-canonical-urls",
       options: {

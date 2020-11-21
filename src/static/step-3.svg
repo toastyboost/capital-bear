@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>st_3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="320" transform="translate(0.000000, -3085.000000)">
+            <g id="03_steps" transform="translate(0.000000, 1272.000000)">
+                <g id="Group-7" transform="translate(0.000000, 1569.000000)">
+                    <g id="st_3" transform="translate(0.000000, 244.000000)">
+                        <rect id="Rectangle-Copy-14" fill="#F9F9FB" x="0" y="0" width="320" height="320"></rect>
+                        <g id="step_pic" transform="translate(16.761905, 53.333333)">
+                            <rect id="Mask" fill="#F9F9FB" x="0" y="0" width="286.47619" height="214.095238" rx="5.33333333"></rect>
+                            <text id="Apple" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                <tspan x="70.8571429" y="26.7142857">Apple</tspan>
+                            </text>
+                            <text id="Add" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#6939CF">
+                                <tspan x="238.47619" y="27.4761905">Add</tspan>
+                            </text>
+                            <text id="Buy-·-CFD" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                <tspan x="70.8571429" y="41.4761905">Buy · CFD</tspan>
+                            </text>
+                            <rect id="Rectangle" fill="#F3F2F9" transform="translate(145.142857, 82.666667) scale(1, -1) translate(-145.142857, -82.666667) " x="22.8571429" y="65.5238095" width="244.571429" height="34.2857143" rx="6.85714286"></rect>
+                            <rect id="Rectangle-Copy" fill="#F3F2F9" transform="translate(145.142857, 124.571429) scale(1, -1) translate(-145.142857, -124.571429) " x="22.8571429" y="107.428571" width="244.571429" height="34.2857143" rx="6.85714286"></rect>
+                            <g id="Group" transform="translate(22.857143, 10.666667)">
+                                <circle id="Oval" fill="#F3F2F9" cx="19.047619" cy="19.047619" r="19.047619"></circle>
+                                <g id="apple-(5)" transform="translate(9.904762, 7.619048)" fill="#000000" fill-rule="nonzero">
+                                    <path d="M13.1498505,0 C12.0102914,0.0788206163 10.6783566,0.808245303 9.90217391,1.75810053 C9.19412431,2.61978354 8.61165331,3.89961659 8.83876356,5.1433792 C10.0838621,5.18212154 11.3703749,4.4353296 12.1158309,3.46944306 C12.8131929,2.57035366 13.3408903,1.29853626 13.1498505,0 Z" id="Path"></path>
+                                    <path d="M17.6533132,7.17134014 C16.5591761,5.79932704 15.0215061,5.00310522 13.5693365,5.00310522 C11.6522588,5.00310522 10.8413416,5.92089782 9.50940677,5.92089782 C8.13605773,5.92089782 7.09268652,5.00577711 5.43478169,5.00577711 C3.8062676,5.00577711 2.07221404,6.00105438 0.972733242,7.70304532 C-0.572952404,10.0997264 -0.308435759,14.605861 2.19645671,18.4440242 C3.09287423,19.8173733 4.28987884,21.361723 5.85560362,21.3752285 C7.24899181,21.3884418 7.64175895,20.4813368 9.52944591,20.4719852 C11.4171329,20.4612976 11.7751655,21.3871059 13.1658818,21.3724105 C14.7329425,21.360387 15.9954083,19.6490445 16.8918259,18.2756954 C17.5344143,17.2911057 17.773548,16.795471 18.2718546,15.6839667 C14.6474422,14.3039379 14.0663071,9.14987121 17.6533132,7.17134014 Z" id="Path"></path>
+                                </g>
+                            </g>
+                            <text id="116.729-copy" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                <tspan x="205.714286" y="86.9047619">116.729</tspan>
+                            </text>
+                            <text id="$10" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                <tspan x="227.809524" y="128.809524">$10</tspan>
+                            </text>
+                            <text id="Price" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                <tspan x="35.8095238" y="86.4285714">Price</tspan>
+                            </text>
+                            <text id="Stop-Loss" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                <tspan x="179.047619" y="27">Stop Loss</tspan>
+                            </text>
+                            <text id="Investment" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                <tspan x="35.8095238" y="128.333333">Investment</tspan>
+                            </text>
+                            <rect id="Rectangle-Copy-3" fill="#DED5F3" opacity="0.759254092" transform="translate(145.142857, 178.666667) scale(1, -1) translate(-145.142857, -178.666667) " x="22.8571429" y="161.52381" width="244.571429" height="34.2857143" rx="6.85714286"></rect>
+                            <text id="Confirm-$10.00" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                <tspan x="100.571429" y="183.666667">Confirm $10.00</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

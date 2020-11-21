@@ -1,35 +1,128 @@
 import * as React from "react";
+import styled from "styled-components";
 
-import { Logo, Link } from "~/ui/atoms";
-import { Menu, Popup } from "~/ui/molecules";
-import { HeaderContainer, Wrapper } from "./styles";
+import { Logo, Button, Burger, Link } from "~/ui/atoms";
+import { Menu, Langs } from "~/ui/molecules";
 
-const headerData = [
+import { MEDIA } from "~/libs/media";
+import { Container } from "~/styles";
+
+const data = [
   {
-    slug: "#footer",
-    caption: "Anchor",
+    path: "/1",
+    title: "Trade",
   },
   {
-    slug: "404",
-    caption: "404 page",
+    path: "/2",
+    title: "For traders",
+  },
+  {
+    path: "/3",
+    title: "About us",
+  },
+  {
+    path: "/4",
+    title: "Regulation",
   },
 ];
 
-const Header = () => {
-  const [isHidden, setVisibility] = React.useState(true);
-
+export const Header = () => {
   return (
-    <HeaderContainer>
-      <Wrapper>
-        <Logo />
-        <Menu data={headerData} />
-        <Link onClick={() => setVisibility(!isHidden)}>Popup Window</Link>
-      </Wrapper>
-      <Popup isOpen={isHidden} toggle={setVisibility}>
-        Popup Content
-      </Popup>
-    </HeaderContainer>
+    <Container>
+      <Wrap>
+        <HeaderLogo />
+        <HeaderMenu data={data} />
+        <Settings>
+          <HeaderLangs />
+          <Login>Log In</Login>
+          <SignUp>Sign Up</SignUp>
+        </Settings>
+        <MobileBurger isVisible={false} onClick={() => null} />
+      </Wrap>
+    </Container>
   );
 };
 
-export { Header };
+const Wrap = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 71px;
+  position: relative;
+  z-index: 100;
+`;
+
+const HeaderLogo = styled(Logo)`
+  ${MEDIA.PHONE`
+    order: 1;
+  `}
+
+  ${MEDIA.DESKTOP`
+    order: 0;
+  `};
+`;
+
+const HeaderMenu = styled(Menu)`
+  // hide menu on mobile
+
+  ${MEDIA.PHONE`
+    display: none;
+  `}
+
+  ${MEDIA.DESKTOP`
+    display: block;
+  `};
+`;
+
+const Settings = styled.div`
+  display: flex;
+
+  ${MEDIA.PHONE`
+    order: 0;
+  `}
+
+  ${MEDIA.DESKTOP`
+    order: 1;
+  `};
+`;
+
+const HeaderLangs = styled(Langs)`
+  // hide langs on mobile
+  ${MEDIA.PHONE`
+    display: none;
+  `}
+
+  ${MEDIA.DESKTOP`
+    display: block;
+  `};
+`;
+
+const Login = styled(Link)`
+  font-size: 14px;
+  color: #fff;
+`;
+
+const SignUp = styled(Button)`
+  // hide signup on mobile
+
+  ${MEDIA.PHONE`
+    display: none;
+  `}
+
+  ${MEDIA.DESKTOP`
+    display: block;
+  `};
+`;
+
+const MobileBurger = styled(Burger)`
+  // show burger on mobile
+
+  ${MEDIA.PHONE`
+    display: flex;
+    order: 2;
+  `}
+
+  ${MEDIA.DESKTOP`
+    display: none;
+  `};
+`;

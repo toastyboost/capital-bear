@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>st_4</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="320" transform="translate(0.000000, -3669.000000)">
+            <g id="03_steps" transform="translate(0.000000, 1272.000000)">
+                <g id="Group-6" transform="translate(0.000000, 2183.000000)">
+                    <g id="st_4" transform="translate(0.000000, 214.000000)">
+                        <rect id="Rectangle-Copy-23" fill="#F9F9FB" x="0" y="0" width="320" height="320"></rect>
+                        <g id="step_pic" transform="translate(16.761905, 14.476190)">
+                            <rect id="Mask" fill="#F9F9FB" x="0" y="0" width="286.47619" height="276.571429" rx="5.33333333"></rect>
+                            <g id="Group" transform="translate(22.857143, 108.952381)">
+                                <rect id="Rectangle" fill="#F3F2F9" transform="translate(122.285714, 0.380952) scale(1, -1) translate(-122.285714, -0.380952) " x="0" y="0" width="244.571429" height="1" rx="0.5"></rect>
+                                <text id="$100" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                    <tspan x="204.952381" y="20.6190476">$100</tspan>
+                                </text>
+                                <text id="Withdraw" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                    <tspan x="12.952381" y="20.9047619">Withdraw</tspan>
+                                </text>
+                            </g>
+                            <g id="Group-Copy-2" transform="translate(22.857143, 144.000000)">
+                                <rect id="Rectangle" fill="#F3F2F9" transform="translate(122.285714, 0.380952) scale(1, -1) translate(-122.285714, -0.380952) " x="0" y="0" width="244.571429" height="1" rx="0.5"></rect>
+                                <text id="$260" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                    <tspan x="204.952381" y="20.6190476">$260</tspan>
+                                </text>
+                                <text id="Withdraw" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                    <tspan x="12.952381" y="20.9047619">Withdraw</tspan>
+                                </text>
+                            </g>
+                            <g id="Group-Copy-3" transform="translate(22.857143, 179.047619)">
+                                <rect id="Rectangle" fill="#F3F2F9" transform="translate(122.285714, 0.380952) scale(1, -1) translate(-122.285714, -0.380952) " x="0" y="0" width="244.571429" height="1" rx="0.5"></rect>
+                                <text id="$310" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                    <tspan x="204.952381" y="20.6190476">$310</tspan>
+                                </text>
+                                <text id="Withdraw" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                    <tspan x="12.952381" y="20.9047619">Withdraw</tspan>
+                                </text>
+                            </g>
+                            <text id="$1843.12" font-family="Manrope-SemiBold, Manrope" font-size="19.8095238" font-weight="500" fill="#200839">
+                                <tspan x="177.52381" y="47.6666667">$1843.12</tspan>
+                            </text>
+                            <g id="Group-2" transform="translate(22.857143, 224.761905)">
+                                <rect id="Rectangle-Copy-3" fill="#DED5F3" opacity="0.759254092" transform="translate(122.285714, 17.142857) scale(1, -1) translate(-122.285714, -17.142857) " x="0" y="0" width="244.571429" height="34.2857143" rx="6.85714286"></rect>
+                                <text id="Withdraw" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                    <tspan x="92.1904762" y="22.1428571">Withdraw</tspan>
+                                </text>
+                            </g>
+                            <text id="USD" font-family="Manrope-SemiBold, Manrope" font-size="12.1904762" font-weight="500" fill="#1D0336">
+                                <tspan x="70.8571429" y="38.9047619">USD</tspan>
+                            </text>
+                            <text id="Balance" opacity="0.488955543" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                <tspan x="70.8571429" y="53.6666667">Balance</tspan>
+                            </text>
+                            <text id="Transaction-history" font-family="Manrope-Medium, Manrope" font-size="10.6666667" font-weight="400" fill="#351F4C">
+                                <tspan x="35.8095238" y="93.2857143">Transaction history</tspan>
+                            </text>
+                            <g id="Group-Copy" transform="translate(22.857143, 22.857143)" fill="#F3F2F9">
+                                <circle id="Oval" cx="19.047619" cy="19.047619" r="19.047619"></circle>
+                            </g>
+                            <g id="dollar-symbol" transform="translate(35.809524, 29.714286)" fill="#6939CF" fill-rule="nonzero">
+                                <path d="M9.36725023,10.7291445 C8.44402382,10.2169424 7.46248837,9.82669311 6.4906711,9.4218095 C5.92701708,9.18765995 5.38765849,8.91448547 4.91146803,8.53399244 C3.97366436,7.78276262 4.15345056,6.56323369 5.25160408,6.08030024 C5.5625856,5.943713 5.88814439,5.89980995 6.21856226,5.88029749 C7.49164289,5.81200387 8.70155539,6.04615343 9.85315886,6.60225862 C10.4265311,6.88031121 10.6160354,6.79250513 10.8103989,6.1924969 C11.0144805,5.55834185 11.1845485,4.91443058 11.3740529,4.27539742 C11.5003891,3.84612324 11.3448984,3.56319253 10.9415942,3.38270224 C10.2030131,3.05586849 9.44499561,2.82171894 8.64810544,2.69488793 C7.60826096,2.53391011 7.60826096,2.52903199 7.60340188,1.48023711 C7.59854279,0.00216805143 7.59854279,0.00216805143 6.12138053,0.00216805143 C5.90758073,0.00216805143 5.69378093,-0.00271006429 5.47998113,0.00216805143 C4.78999087,0.0216805143 4.6733728,0.143633407 4.65393645,0.841203955 C4.64421828,1.15340336 4.65393645,1.46560277 4.64907737,1.78268029 C4.64421828,2.70952227 4.63935919,2.69488793 3.75500548,3.01684357 C1.61700747,3.79734208 0.295335984,5.2607768 0.154422479,7.60227234 C0.0280862337,9.67547152 1.10680341,11.0754907 2.80262455,12.0950169 C3.84732812,12.7242938 5.00379067,13.0950306 6.11166236,13.5877203 C6.54412105,13.7779668 6.95714339,13.997482 7.31671578,14.2999252 C8.38085569,15.1828642 8.18649224,16.651177 6.92312979,17.2072822 C6.24771678,17.5048472 5.53343108,17.578019 4.79970904,17.4853348 C3.66754192,17.3438694 2.58396566,17.0463044 1.56355752,16.5145898 C0.965889902,16.2023904 0.790962793,16.2853183 0.586881166,16.9341077 C0.411954056,17.495091 0.256463293,18.0609524 0.100972529,18.6268139 C-0.107968185,19.3877999 -0.0302228027,19.5682902 0.693781066,19.9243926 C1.61700747,20.3731793 2.60340201,20.6024507 3.60923288,20.7634285 C4.39640488,20.8902596 4.42070031,20.9244064 4.43041848,21.7439298 C4.43527757,22.1146666 4.43527757,22.4902815 4.44013665,22.8610183 C4.44499574,23.3293174 4.66851371,23.6024919 5.14956326,23.6122481 C5.69378093,23.6220044 6.24285769,23.6220044 6.78707537,23.60737 C7.23411131,23.5976138 7.46248837,23.353708 7.46248837,22.9000432 C7.46248837,22.3927192 7.4867838,21.880517 7.46734746,21.373193 C7.44305203,20.8561127 7.66657,20.5926945 8.16219681,20.4561073 C9.3040821,20.1439079 10.2758994,19.5292653 11.0241987,18.6121795 C13.1038876,16.0755593 12.3118566,12.3633133 9.36725023,10.7291445 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

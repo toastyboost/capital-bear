@@ -1,25 +1,22 @@
 import * as React from "react";
-
-import { RouterLink, ExternalLink } from "./styles";
+import styled from "styled-components";
 
 type LinkProps = {
   className?: string;
-  activeClassName?: string;
   to?: string;
-  target?: string;
-  onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
-}
-
-export const Link: React.FC<LinkProps> = ({ children, className, activeClassName, to = '', target, onClick }) => {
-  const internal = to && /^\/(?!\/)/.test(to);
-
-  return internal ? (
-    <RouterLink className={className} to={to} activeClassName={activeClassName} onClick={onClick}>
-      {children}
-    </RouterLink>
-  ) : (
-      <ExternalLink className={className} href={to} target={target} onClick={onClick}>
-        {children}
-      </ExternalLink>
-    );
 };
+
+export const Link: React.FC<LinkProps> = ({ children, className, to = "" }) => {
+  return (
+    <HrefLink href={to} className={className}>
+      {children}
+    </HrefLink>
+  );
+};
+
+const HrefLink = styled.a`
+  font-family: "Manrope";
+  font-weight: 600;
+  color: rgb(68, 67, 98);
+  font-size: 14px;
+`;

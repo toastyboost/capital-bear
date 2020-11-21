@@ -6,6 +6,5 @@ export { Logo } from "./Logo";
 export { Input } from "./Input";
 export { Button } from './Button'
 export { Title } from './Title'
-export { Cta } from './Cta'
 export { Text } from './Text'
 export { Icon } from './Icon';

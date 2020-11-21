@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 import { Burger } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
-import { FixedBackground } from "~/styles";
 
-export const AsideBackground = styled(FixedBackground)``;
+export const AsideBackground = styled.div``;
 
 export const Aside = styled.aside<{ isVisible: boolean }>`
   opacity: ${(p) => (p.isVisible ? "1" : "0")};

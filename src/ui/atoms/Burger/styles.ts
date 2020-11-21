@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-const width = 25;
-const height = 3;
+const width = 20;
+const height = 2;
 const radius = 10;
-const theme = "#000";
+const theme = "#fff";
 
 export const StyledBurgerContainer = styled.div`
   position: relative;
@@ -16,7 +16,7 @@ export const StyledBurgerContainer = styled.div`
 `;
 
 export const StyledBurgerBox = styled.div`
-  width: 36px;
+  width: 20px;
   height: 36px;
   display: inline-block;
   position: relative;
@@ -51,12 +51,12 @@ export const StyledBurgerInner = styled.div<{ isActive: boolean }>`
   &:before {
     transition: 0.1s linear;
     transition: 0;
-    top: ${(p) => (p.isActive ? 0 : "-8px")};
+    top: ${(p) => (p.isActive ? 0 : "-7px")};
     opacity: ${(p) => (p.isActive ? 0 : 1)};
   }
 
   &:after {
-    bottom: ${(p) => (p.isActive ? 0 : "-8px")};
+    bottom: ${(p) => (p.isActive ? 0 : "-7px")};
     transform: ${(p) => (p.isActive ? "rotate(90deg)" : "rotate(0)")};
     transition: 0.2s ease-in-out;
   }
