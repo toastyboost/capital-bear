@@ -7,15 +7,20 @@ export { GlobalStyles } from "./defaults";
 export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
-  padding: 0 24px;
+ 
   
   ${MEDIA.PHONE`
     max-width: 320px;
- 
+    padding: 0 24px;
+  `}
+
+  ${MEDIA.SMARTPHONE`
+    max-width: 320px;
+    padding: 0 24px;
   `}
 
   ${MEDIA.TABLET`
-    max-width: 960px;
+    max-width: 320px;
   `}
 
   ${MEDIA.DESKTOP`

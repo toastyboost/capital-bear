@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 type LinkProps = {
   className?: string;
-  to?: string;
+  href?: string;
 };
 
-export const Link: React.FC<LinkProps> = ({ children, className, to = "" }) => {
+export const Link: React.FC<LinkProps> = ({ children, className, href = "" }) => {
   return (
-    <HrefLink href={to} className={className}>
+    <HrefLink href={href} className={className}>
       {children}
     </HrefLink>
   );

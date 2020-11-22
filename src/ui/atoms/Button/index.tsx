@@ -1,25 +1,34 @@
 import * as React from "react";
 import styled from "styled-components";
-
+import { Link } from "~/ui/atoms";
 import arrowRight from "~/static/arrow-right.svg";
+
 type Props = {
   className?: string;
+  type?: "ghost";
+  href: string;
 };
 
-export const Button: React.FC<Props> = ({ children, className }) => {
-  return <Wrap className={className}>{children}</Wrap>;
+export const Button: React.FC<Props> = ({ children, className, href, type }) => {
+  return (
+    <Wrap className={className} href={href} type={type}>
+      {children}
+    </Wrap>
+  );
 };
 
-const Wrap = styled.button`
+const Wrap = styled<any>(Link)`
   font-family: "Manrope";
   background-color: var(--primary);
   font-size: 16px;
-  line-height: 57px;
+  line-height: 60px;
   color: #fff;
   padding: 0 25px 0 32px;
   border-radius: 50px;
   font-weight: 600;
   white-space: nowrap;
+  display: inline-block;
+  max-width: 220px;
 
   &:after {
     content: "";
@@ -31,4 +40,17 @@ const Wrap = styled.button`
     background-size: cover;
     margin-left: 15px;
   }
+
+  ${(p) =>
+    p.type === "ghost" &&
+    `
+    background-color: transparent;
+    color: var(--primary);
+    padding: 0;
+
+    &:after {
+      content:'→'; 
+      background-image: none;
+    }
+  `}
 `;

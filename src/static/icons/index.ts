@@ -5,6 +5,8 @@ import pin from './pin.svg'
 import ways from './ways.svg'
 import cube from './cube.svg'
 import assets from './assets.svg'
+import phone from './phone.svg'
+import chat from './chat.svg';
 
 export const icons: any = {
     user,
@@ -13,6 +15,8 @@ export const icons: any = {
     pin,
     ways,
     cube,
-    assets
+    assets,
+    phone,
+    chat
 };
 

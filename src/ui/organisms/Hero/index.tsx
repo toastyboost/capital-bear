@@ -5,8 +5,10 @@ import { Title, Text, Icon, Button } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
 
-import bg320 from "~/static/header_bg_320.png";
-import hero320 from "~/static/hero_320.png";
+import heroMobile from "~/static/hero-mobile.png";
+import heroDesktop from "~/static/hero-desktop.png";
+
+import headerBG320 from "~/static/header-bg-320.png";
 
 const bulletData = [
   {
@@ -36,11 +38,12 @@ export const Hero = () => {
     <Background>
       <Wrap>
         <Title level={1}>Trade Stocks, Forex, Options and Cryptos</Title>
-        <Text level={1}>
+        <HeroText level={1}>
           Follow other investors, discover companies to believe in, invest with any.
-        </Text>
-        <Button>Open free account</Button>
-        <HeroImage src={hero320} alt="" />
+        </HeroText>
+        <Cta href="/to-open-free-account">Open free account</Cta>
+        <HeroMobileImage src={heroMobile} alt="" />
+        <HeroDesktopImage src={heroDesktop} alt="" />
         <Bullets>
           {bulletData.map(({ icon, numbers, text }) => (
             <Bullet key={icon}>
@@ -56,43 +59,84 @@ export const Hero = () => {
 };
 
 const Background = styled.div`
-  position: relative;
-  background-image: linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+  background-image: url(${headerBG320}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+  background-position: top center;
+  background-repeat: no-repeat;
 
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  ${MEDIA.PHONE`
+    background-size: contain;
+  `}
+
+  ${MEDIA.SMARTPHONE`
     background-size: cover;
-  }
-
-  &:before {
-    z-index: 1;
-    background-image: url(${bg320});
-  }
+  `}
 `;
 
 const Wrap = styled(Container)`
   text-align: center;
-  margin-top: -71px;
-  padding-top: 71px;
-  z-index: 100;
-  position: relative;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+
+  ${MEDIA.PHONE`
+    padding-top: calc(71px + 20px);
+  `}
+
+  ${MEDIA.SMARTPHONE`
+    padding-top: calc(71px + 56px);
+  `}
 `;
 
-const HeroImage = styled.img`
+const HeroText = styled(Text)`
+  margin-top: 10px;
+`;
+
+const Cta = styled(Button)`
+  margin: 24px auto 48px auto;
+  line-height: 56px;
+`;
+
+const HeroMobileImage = styled.img`
   max-width: 265px;
-  display: block;
   border-bottom: 1px solid #e2deeb;
+  margin: 0 auto;
+
+  ${MEDIA.PHONE`
+    display: block;
+  `}
+
+  ${MEDIA.DESKTOP`
+    display: none;
+  `};
+`;
+
+const HeroDesktopImage = styled.img`
+  width: 100%;
+  height: auto;
+
+  ${MEDIA.PHONE`
+    display: none;
+  `}
+
+  ${MEDIA.DESKTOP`
+    display: block;
+  `};
 `;
 
 const Bullets = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  ${MEDIA.PHONE`
+    padding-top: 60px;
+    margin-bottom: 40px;
+  `}
+
+  ${MEDIA.DESKTOP`
+    padding: 0 60px;
+    margin-top: -40px;
+    margin-bottom: 70px;
+  `};
 `;
 
 const Bullet = styled.div`
@@ -102,7 +146,7 @@ const Bullet = styled.div`
 
   ${MEDIA.PHONE`
     width: 50%;
-    margin-bottom: 40px;
+     
   `}
 
   ${MEDIA.DESKTOP`
@@ -111,16 +155,26 @@ const Bullet = styled.div`
 `;
 
 const BulletIcon = styled(Icon)`
+  margin-bottom: 20px;
+
   ${MEDIA.PHONE`
     width: 52px;
     height: 52px;
-    padding: 15px;
-    margin-bottom: 20px;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
   `}
 
   ${MEDIA.DESKTOP`
     width: 71px;
     height: 71px;
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
   `};
 `;
 

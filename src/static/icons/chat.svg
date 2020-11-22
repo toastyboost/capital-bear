@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chat-circle-dots-bold</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chat-circle-dots-bold">
+            <rect id="Rectangle" x="0" y="0" width="30" height="30"></rect>
+            <path d="M5.32365586,20.741966 C2.43162847,15.8667019 3.62034598,9.60108117 8.09702123,6.12381198 C12.5736965,2.64654279 18.9386324,3.04484351 22.9468849,7.05307686 C26.9551373,11.0613102 27.3534684,17.4262442 23.8762205,21.9029361 C20.3989727,26.3796279 14.1333576,27.5683752 9.25807969,24.6763711 L9.25810664,24.6762539 L5.37257109,25.7864063 C5.04520018,25.8799433 4.69285073,25.7886418 4.45210097,25.547892 C4.2113512,25.3071422 4.12004963,24.9547928 4.21358672,24.6274219 L5.32374023,20.7418863 L5.32365586,20.741966 Z" id="Path" stroke="#6939CF" stroke-width="2.8125" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#6939CF" fill-rule="nonzero" cx="15" cy="15" r="1.875"></circle>
+            <circle id="Oval" fill="#6939CF" fill-rule="nonzero" cx="9.375" cy="15" r="1.875"></circle>
+            <circle id="Oval" fill="#6939CF" fill-rule="nonzero" cx="20.625" cy="15" r="1.875"></circle>
+        </g>
+    </g>
+</svg>

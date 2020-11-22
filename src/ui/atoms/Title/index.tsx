@@ -8,6 +8,7 @@ type Levels = {
 
 type Props = {
   className?: string;
+  dangerouslySetInnerHTML?: any;
 } & Levels;
 
 const levels = {
@@ -17,8 +18,13 @@ const levels = {
   4: "h4",
 } as any;
 
-export const Title: React.FC<Props> = ({ className, children, level }) => (
-  <Wrap className={className} as={levels[level]} level={level}>
+export const Title: React.FC<Props> = ({ className, children, level, dangerouslySetInnerHTML }) => (
+  <Wrap
+    className={`${className} title`}
+    as={levels[level]}
+    level={level}
+    dangerouslySetInnerHTML={dangerouslySetInnerHTML}
+  >
     {children}
   </Wrap>
 );
@@ -29,11 +35,10 @@ const map = (props: Levels) => ({
 
 const Wrap = styled.div.attrs<Levels>(map)`
   color: #27262d;
+  font-weight: 600;
 
   /* h1 */
   &[data-level="1"] {
-    font-weight: 600;
-
     ${MEDIA.PHONE`
       font-size: 30px;
       line-height: 38px;
@@ -47,8 +52,6 @@ const Wrap = styled.div.attrs<Levels>(map)`
 
   /* h2 */
   &[data-level="2"] {
-    font-weight: 600;
-
     ${MEDIA.PHONE`
       font-size: 30px;
       line-height: 36px;
@@ -62,8 +65,6 @@ const Wrap = styled.div.attrs<Levels>(map)`
 
   /* h3 */
   &[data-level="3"] {
-    font-weight: 600;
-
     ${MEDIA.PHONE`
       font-size: 24px;
       line-height: 30px;
@@ -77,8 +78,6 @@ const Wrap = styled.div.attrs<Levels>(map)`
 
   /* h4 */
   &[data-level="4"] {
-    font-weight: 700;
-
     ${MEDIA.PHONE`
       font-size: 20px;
       line-height: 30px;

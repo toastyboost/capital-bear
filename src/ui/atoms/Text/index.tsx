@@ -20,19 +20,6 @@ const map = (props: Levels) => ({
   "data-level": props.level,
 });
 
-// desktop
-
-// lvl 1
-
-// lvl 2
-
-// font-size: 16px
-// line-height 23px
-
-// lvl 3
-
-// font-size: 14px
-
 const Wrap = styled.p.attrs<Levels>(map)`
   color: #425466;
   font-weight: 500;
@@ -46,6 +33,18 @@ const Wrap = styled.p.attrs<Levels>(map)`
     ${MEDIA.DESKTOP`
       font-size: 18px;
       line-height: 26px;
+    `};
+  }
+
+  &[data-level="2"] {
+    ${MEDIA.PHONE`    
+      font-size: 16px;
+      line-height: 24px;
+    `}
+
+    ${MEDIA.DESKTOP`
+      font-size: 16px;
+      line-height: 24px;
     `};
   }
 

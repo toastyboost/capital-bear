@@ -1,7 +1,7 @@
-import { StringifyOptions } from "querystring";
 import * as React from "react";
 import styled from "styled-components";
 import { Title, Text, Icon } from "~/ui/atoms";
+import { MEDIA } from "~/libs/media";
 
 type Props = {
   className?: string;
@@ -13,10 +13,10 @@ type Props = {
 export const Section: React.FC<Props> = ({ className, children, icon, title, description }) => {
   return (
     <Wrap className={className}>
-      <Header>
+      <Header className={"section-header"}>
         <SectionIcon name={icon} />
         <SectionTitle level={2}>{title}</SectionTitle>
-        {description && <SectionDescription level={2}>{description}</SectionDescription>}
+        {description && <SectionDescription level={1}>{description}</SectionDescription>}
       </Header>
       <Content>{children}</Content>
     </Wrap>
@@ -24,7 +24,13 @@ export const Section: React.FC<Props> = ({ className, children, icon, title, des
 };
 
 const Wrap = styled.section`
-  padding-top: 67px;
+  ${MEDIA.PHONE`
+    padding-top: 65px;
+  `}
+
+  ${MEDIA.DESKTOP`
+    padding-top: 85px;
+  `};
 `;
 
 const Header = styled.div`
@@ -35,7 +41,7 @@ const Header = styled.div`
 `;
 
 const Content = styled.div`
-  padding-top: 61px;
+  padding-top: 60px;
   display: flex;
   flex-wrap: wrap;
 `;
@@ -55,4 +61,8 @@ const SectionTitle = styled(Title)`
 const SectionDescription = styled(Text)`
   width: 100%;
   color: #27262d;
+
+  ${MEDIA.DESKTOP`
+    max-width: 600px;
+  `};
 `;

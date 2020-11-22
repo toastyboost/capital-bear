@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { Logo, Button, Burger, Link } from "~/ui/atoms";
+import { Logo, Burger, Link } from "~/ui/atoms";
 import { Menu, Langs } from "~/ui/molecules";
 
 import { MEDIA } from "~/libs/media";
@@ -9,56 +9,70 @@ import { Container } from "~/styles";
 
 const data = [
   {
-    path: "/1",
+    path: "/trade",
     title: "Trade",
   },
   {
-    path: "/2",
+    path: "/for-traders",
     title: "For traders",
   },
   {
-    path: "/3",
+    path: "/about-us",
     title: "About us",
   },
   {
-    path: "/4",
+    path: "/regulation",
     title: "Regulation",
   },
 ];
 
 export const Header = () => {
   return (
-    <Container>
-      <Wrap>
-        <HeaderLogo />
+    <Wrap>
+      <HeaderContainer>
+        <HeaderLogo type="white" />
         <HeaderMenu data={data} />
         <Settings>
-          <HeaderLangs />
-          <Login>Log In</Login>
-          <SignUp>Sign Up</SignUp>
+          {/* <HeaderLangs /> */}
+          <Login href="/login">Log In</Login>
+          <SignUp href="/signup">Sign Up</SignUp>
         </Settings>
         <MobileBurger isVisible={false} onClick={() => null} />
-      </Wrap>
-    </Container>
+      </HeaderContainer>
+    </Wrap>
   );
 };
 
-const Wrap = styled.section`
+const Wrap = styled.header`
+  position: relative;
+  z-index: 101;
+`;
+
+const HeaderContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 71px;
-  position: relative;
-  z-index: 100;
 `;
 
 const HeaderLogo = styled(Logo)`
+  position: relative;
+
+  img {
+    max-width: 120px;
+    height: auto;
+  }
+
   ${MEDIA.PHONE`
     order: 1;
+    left: -4px;
+    bottom: -1px;
   `}
 
   ${MEDIA.DESKTOP`
     order: 0;
+    left: 0;
+    bottom: 0;
   `};
 `;
 
@@ -76,6 +90,7 @@ const HeaderMenu = styled(Menu)`
 
 const Settings = styled.div`
   display: flex;
+  align-items: center;
 
   ${MEDIA.PHONE`
     order: 0;
@@ -99,10 +114,10 @@ const HeaderLangs = styled(Langs)`
 
 const Login = styled(Link)`
   font-size: 14px;
-  color: #fff;
+  color: #d8d8d8;
 `;
 
-const SignUp = styled(Button)`
+const SignUp = styled(Link)`
   // hide signup on mobile
 
   ${MEDIA.PHONE`
@@ -111,6 +126,11 @@ const SignUp = styled(Button)`
 
   ${MEDIA.DESKTOP`
     display: block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    color: #fff;
+    padding: 5px 16px 7px 16px;
+    margin-left: 20px;
   `};
 `;
 
