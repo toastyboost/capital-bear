@@ -1,21 +1,22 @@
 import * as React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
-import { Title, Text, Button } from "~/ui/atoms";
+import { Text, Button } from "~/ui/atoms";
 import { Section } from "~/ui/molecules";
 import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
 
 import plus from "~/static/plus.svg";
+import payments from "~/static/payments.svg";
+
 import { fetchAssets } from "../../../api";
 
 const sliderSettings = {
   infinite: false,
   variableWidth: true,
-  adaptiveHeight: true,
   speed: 500,
   slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1920,
@@ -28,17 +29,8 @@ const sliderSettings = {
     {
       breakpoint: 960,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 3,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
       },
     },
   ],
@@ -62,27 +54,32 @@ export const TrendingAssets = () => {
   }, []);
 
   return (
-    <Wrap>
-      <Section icon="cube" title="Trending assets">
-        <Tabs>
-          {tabs.map((tab) => (
-            <Tab key={tab} onClick={() => setActiveTab(tab)} isActive={tab === activeTab}>
-              {tab} <span>‧ {assets[tab].length}</span>
-            </Tab>
-          ))}
-        </Tabs>
-        <Slider {...sliderSettings}>
-          {assets[activeTab].map((asset: any) => (
-            <AssetCard data={asset} key={asset.id} />
-          ))}
-        </Slider>
-        <Desclimer>
-          Not investment advice.
-          <br />
-          Past performance is not an indication of future results.
-        </Desclimer>
-      </Section>
-    </Wrap>
+    <>
+      <Wrap>
+        <Section icon="cube" title="Trending assets">
+          <Tabs>
+            {tabs.map((tab) => (
+              <Tab key={tab} onClick={() => setActiveTab(tab)} isActive={tab === activeTab}>
+                {tab} <span>‧ {assets[tab].length}</span>
+              </Tab>
+            ))}
+          </Tabs>
+          <Slider {...sliderSettings}>
+            {assets[activeTab].map((asset: any) => (
+              <AssetCard data={asset} key={asset.id} />
+            ))}
+          </Slider>
+          <Desclimer>
+            Not investment advice.
+            <br />
+            Past performance is not an indication of future results.
+          </Desclimer>
+        </Section>
+      </Wrap>
+      <Payments>
+        <PaymentsLogos src={payments} alt=" " />
+      </Payments>
+    </>
   );
 };
 
@@ -114,6 +111,14 @@ const Wrap = styled(Container)`
   max-width: 1096px;
   overflow: hidden;
 
+  ${MEDIA.PHONE`
+    padding: 0;
+  `}
+
+  ${MEDIA.DESKTOP`
+    padding: 0 24px;
+  `};
+
   .section-header {
     ${MEDIA.PHONE`
       padding: 0 24px;
@@ -124,14 +129,6 @@ const Wrap = styled(Container)`
     `};
   }
 
-  ${MEDIA.PHONE`
-    padding: 0;
-  `}
-
-  ${MEDIA.DESKTOP`
-    padding: 0 24px;
-  `};
-
   .slick-slider {
     width: 100%;
 
@@ -140,13 +137,12 @@ const Wrap = styled(Container)`
     `}
 
     ${MEDIA.DESKTOP`
-    transform: translateX(0);
-    
+      transform: translateX(0);
     `};
   }
 
   .slick-list {
-    min-height: 347px;
+    min-height: 343px;
   }
 
   .slick-slide {
@@ -201,11 +197,18 @@ const Tab = styled.div<any>`
 const Card = styled.div`
   background-color: #f9f9fb;
   border-radius: 5px;
-  padding: 22px;
-  width: 248px;
+  width: 246px;
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  ${MEDIA.PHONE`
+    padding: 22px;
+  `}
+
+  ${MEDIA.DESKTOP`
+    padding: 33px;
+  `};
 `;
 
 const Head = styled.div`
@@ -309,3 +312,19 @@ const Desclimer = styled.div`
     font-size: 14px;
   `};
 `;
+
+const Payments = styled.div`
+  border-top: 1px solid rgba(228, 221, 244, 0.5);
+  padding: 60px 0 70px 0;
+  text-align: center;
+
+  ${MEDIA.PHONE`
+    display: none;
+  `}
+
+  ${MEDIA.DESKTOP`
+    display: block;
+  `};
+`;
+
+const PaymentsLogos = styled.img``;

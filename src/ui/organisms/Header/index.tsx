@@ -118,6 +118,8 @@ const Login = styled(Link)`
 `;
 
 const SignUp = styled(Link)`
+  color: #fff;
+
   // hide signup on mobile
 
   ${MEDIA.PHONE`
@@ -126,11 +128,15 @@ const SignUp = styled(Link)`
 
   ${MEDIA.DESKTOP`
     display: block;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(105,57,207, 0.25);
     border-radius: 50px;
-    color: #fff;
     padding: 5px 16px 7px 16px;
     margin-left: 20px;
+
+    &:hover {
+      background-color: var(--primary);
+      border: 1px solid var(--primary);
+    }
   `};
 `;
 

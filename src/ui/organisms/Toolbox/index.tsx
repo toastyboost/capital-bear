@@ -132,12 +132,12 @@ const ToolText = styled(Text)`
 `;
 
 const ToolCta = styled(Button)`
-  ${MEDIA.DESKTOP`
+  ${MEDIA.PHONE`
     display: none;
   `};
 
   ${MEDIA.DESKTOP`
     margin-top: auto;
-    display: block;
+    display: inline-block;
   `};
 `;

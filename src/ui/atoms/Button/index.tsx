@@ -29,6 +29,8 @@ const Wrap = styled<any>(Link)`
   white-space: nowrap;
   display: inline-block;
   max-width: 220px;
+  position: relative;
+  transition: 0.2s;
 
   &:after {
     content: "";
@@ -39,6 +41,10 @@ const Wrap = styled<any>(Link)`
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 15px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 
   ${(p) =>
@@ -52,5 +58,23 @@ const Wrap = styled<any>(Link)`
       content:'→'; 
       background-image: none;
     }
+    
+    &:before {
+      transition: 0.2s;
+    }
+
+    &:hover {
+      transform: scale(1);
+      
+      &:before {
+        content: '';
+        height: 1px;
+        background-color:rgba(105, 57, 207, 0.4);
+        position: absolute;
+        bottom: 14px;
+        left: 0;
+        width: calc(100% + 8px);
+       }
+     }
   `}
 `;

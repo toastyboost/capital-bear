@@ -3,15 +3,14 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import { Button } from "~/ui/atoms";
 import { Section } from "~/ui/molecules";
-// import { MEDIA } from "~/libs/media";
+import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
 
 import facebookIcon from "~/static/facebook.svg";
 
 const sliderSettings = {
   infinite: false,
-  speed: 500,
-  adaptiveWidth: true,
+
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -42,9 +41,12 @@ export const About = () => {
             {aboutData.map(({ text, name, date, socialIcon }, key) => (
               <Quote key={key}>
                 <Text>{text}</Text>
-                <Name>{name}</Name>
-                <Date>{date}</Date>
-                <Icon src={socialIcon} alt=" " />
+                <Info>
+                  <Name>{name}</Name>
+                  <span>‧</span>
+                  <Date>{date}</Date>
+                  <Icon src={socialIcon} alt=" " />
+                </Info>
               </Quote>
             ))}
           </Slider>
@@ -56,21 +58,63 @@ export const About = () => {
 };
 
 const Wrap = styled(Container)`
-  padding-bottom: 50px;
   overflow: hidden;
+
+  ${MEDIA.PHONE`
+    padding: 0 0 50px 0;
+  `}
+
+  ${MEDIA.DESKTOP`
+    padding: 0 24px 50px 24px;
+  `};
+
+  .slick-slider {
+    width: 100%;
+
+    ${MEDIA.PHONE`
+      transform: translateX(24px);
+    `}
+
+    ${MEDIA.DESKTOP`
+      transform: translateX(0);
+    `};
+  }
+
+  .slick-arrow.slick-disabled {
+    opacity: 1;
+  }
 `;
 
 const Quotes = styled.div`
   margin-top: -20px;
-  width: 100%;
   padding-bottom: 50px;
+  width: 100%;
 `;
 
 const Quote = styled.div`
   position: relative;
-  padding: 54px 25px;
   text-align: center;
-  /* background-color: #f9f9fb; */
+  background-color: #f9f9fb;
+
+  ${MEDIA.PHONE`
+    width: 270px !important;
+    padding: 54px 25px 25px 25px;
+
+    span {
+      display: none;
+    }
+  `}
+
+  ${MEDIA.DESKTOP`
+    width: 100% !important;
+    padding: 54px 110px 65px 110px;
+
+    span {
+      display: inline-block;
+      padding: 0 7px;
+      opacity: 0.5;
+    }
+  `};
 `;
 
 const Cta = styled(Button)`
@@ -78,31 +122,65 @@ const Cta = styled(Button)`
 `;
 
 const Text = styled.p`
+  ${MEDIA.PHONE`
+    font-size: 18px;
+    line-height: 27px;
+  `}
+
+  ${MEDIA.DESKTOP`
+    font-size: 30px;
+    line-height: 44px;
+  `};
+`;
+
+const Info = styled.div`
   font-size: 18px;
-  line-height: 27px;
+  line-height: 1;
+
+  ${MEDIA.DESKTOP`
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `};
 `;
 
 const Name = styled.p`
-  padding-top: 45px;
-  font-size: 18px;
-  line-height: 1;
   color: rgb(61, 61, 70);
   font-weight: 700;
+
+  ${MEDIA.PHONE`
+    padding-top: 45px;
+  `}
+
+  ${MEDIA.DESKTOP`
+    padding-top: 0;
+  `};
 `;
 
 const Date = styled.p`
   color: rgb(119, 119, 119);
   font-size: 16px;
-  padding-top: 5px;
+
+  ${MEDIA.PHONE`
+    padding-top: 5px;
+  `}
+
+  ${MEDIA.DESKTOP`
+    padding-top: 0;
+    margin: 0 20px 0 0;
+  `};
 `;
 
 const Icon = styled.img`
   width: 26px;
   height: 26px;
-  position: absolute;
-  bottom: -12px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  z-index: 2;
+
+  ${MEDIA.PHONE`
+    margin: 12px 0 auto 0;
+  `}
+
+  ${MEDIA.DESKTOP`
+    margin: 0;
+  `};
 `;

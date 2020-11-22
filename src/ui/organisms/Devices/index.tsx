@@ -23,26 +23,27 @@ const devices = [
 export const Devices = () => {
   return (
     <Wrap>
-      <Section
-        icon="phone"
-        title="Sleek performance on any device"
-        description="Trade on Web or Mobile and switch between the two without a hitch"
-      >
-        <Browsers src={browsers} />
-        {/* {devices.map(({ imageSrc }, key) => (
+      <Container>
+        <Section
+          icon="phone"
+          title="Sleek performance on any device"
+          description="Trade on Web or Mobile and switch between the two without a hitch"
+        >
+          <Browsers src={browsers} />
+          {/* {devices.map(({ imageSrc }, key) => (
           <Device key={key}>
             <DeviceImage src={imageSrc} alt="" />
           </Device>
         ))} */}
-        <Cta href="/to-open-account">Open free account</Cta>
-      </Section>
+          {/* <Cta href="/to-open-account">Open free account</Cta> */}
+        </Section>
+      </Container>
     </Wrap>
   );
 };
 
-const Wrap = styled(Container)`
+const Wrap = styled.div`
   background-color: #f9f9fb;
-  padding: 0;
 
   .title {
     padding-left: 15px;

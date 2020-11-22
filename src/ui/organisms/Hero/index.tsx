@@ -120,6 +120,7 @@ const HeroDesktopImage = styled.img`
 
   ${MEDIA.DESKTOP`
     display: block;
+    margin-left: -44px;
   `};
 `;
 
@@ -133,7 +134,7 @@ const Bullets = styled.div`
   `}
 
   ${MEDIA.DESKTOP`
-    padding: 0 60px;
+    padding: 0 35px;
     margin-top: -40px;
     margin-bottom: 70px;
   `};
