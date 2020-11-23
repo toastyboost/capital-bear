@@ -79,8 +79,6 @@ const HeaderLogo = styled(Logo)`
 `;
 
 const HeaderMenu = styled(Menu)`
-  // hide menu on mobile
-
   ${MEDIA.PHONE`
     display: none;
   `}
