@@ -9,39 +9,39 @@ const formatResult = (assets: any) =>
   assets.map((asset: any) => ({
     id: asset.id,
     name: asset.name,
-    card: `${STATIC_FILES}${asset.multimedia.card}`,
     logo: `${STATIC_FILES}${asset.multimedia.logo}`,
-    price: asset.price,
+    price: asset.price.toFixed(2),
     ticker: asset.ticker,
-    change: asset.charts.d1.change,
-  }));
+    change: asset.charts.d1.change.toFixed(2),
+    type: asset.type,
+  })).reduce((acc: any, item: any) => ({
+    ...acc,
+    ...(Boolean(item.type) && {
+      [item.type]: [...(acc[item.type] || []), item]
+    })
+  }), {} as any);
 
 export const fetchAssets = async () => {
   return axios
     .post(FININFO_GQL, {
       query: `
-      {actives(limit:7, instrument:CFD, sort:{field:Popularity, direction:Descending}) {
-      id
-      image
-      price
-      type
-      ticker
-      multimedia {
-        card
-        logo
-      }
-      name(source:TradeRoom)
-      charts {
-        d1 {
-          quotes(size: xs) {
-            price
-            timestamp
+      {actives(instruments: [ CFD, Forex, Crypto], sort:{field:Popularity, direction:Ascending}) {
+        id
+        image
+        price
+        type
+        ticker
+        multimedia {
+          logo
+        }
+        name(source:TradeRoom)
+        charts {
+          d1 {
+            change
           }
-          change
         }
       }
     }
-  }
   `,
     })
     .then(({ data }) => formatResult(data.data.actives));

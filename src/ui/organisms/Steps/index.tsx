@@ -6,15 +6,16 @@ import { Section } from "~/ui/molecules";
 import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
 
-import step1 from "~/static/step-1.svg";
-import step2 from "~/static/step-2.svg";
-import step3 from "~/static/step-3.svg";
-import step4 from "~/static/step-4.svg";
+import step1 from "~/static/step-1.png";
+import step2 from "~/static/step-2.png";
+import step3 from "~/static/step-3.png";
+import step4 from "~/static/step-4.png";
 
 const stepsData = [
   {
     title: "Register for free. <br />It takes less than 1 minute",
-    text: "After a simple registration, you will get access to thousands of assets",
+    text:
+      "After a simple registration, you will get access to thousands of assets",
     imageSrc: step1,
   },
   {
@@ -49,7 +50,10 @@ export const Steps = () => {
           <Step key={key}>
             <Left>
               <Tag level={3}>Step {key + 1}</Tag>
-              <StepTitle level={3} dangerouslySetInnerHTML={{ __html: title }} />
+              <StepTitle
+                level={3}
+                dangerouslySetInnerHTML={{ __html: title }}
+              />
               <StepText level={3}>{text}</StepText>
             </Left>
             <Right>

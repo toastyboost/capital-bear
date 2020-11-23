@@ -183,14 +183,19 @@ const Link = styled.a`
 
 const Email = styled.a`
   color: rgb(255, 255, 255);
-  display: block;
+
+  &:hover {
+    color: var(--primary);
+  }
 
   ${MEDIA.PHONE`
     margin-bottom: 40px;
+    display: block;
   `}
 
   ${MEDIA.DESKTOP`
     margin-bottom: 60px;
+    display: inline-block;
   `};
 `;
 

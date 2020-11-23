@@ -37,38 +37,36 @@ const sliderSettings = {
   ],
 };
 
-const tabs = ["forex", "stocks", "crypto", "commodities", "etf"];
-
 export const TrendingAssets = () => {
-  const [assets, setAssets] = React.useState<any>({
-    forex: [],
-    stocks: [],
-    crypto: [],
-    commodities: [],
-    etf: [],
-  });
-
-  const [activeTab, setActiveTab] = React.useState<any>("forex");
+  const [assets, setAssets] = React.useState<any>(null);
+  const [activeTab, setActiveTab] = React.useState<any>("Forex");
 
   React.useEffect(() => {
-    fetchAssets().then((data) => setAssets({ ...assets, forex: data }));
+    fetchAssets().then(setAssets);
   }, []);
 
   return (
     <>
       <Wrap>
         <Section icon="cube" title="Trending assets">
-          <Tabs>
-            {tabs.map((tab) => (
-              <Tab key={tab} onClick={() => setActiveTab(tab)} isActive={tab === activeTab}>
-                {tab} <span>‧ {assets[tab].length}</span>
-              </Tab>
-            ))}
-          </Tabs>
+          {assets && (
+            <Tabs>
+              {Object.keys(assets).map((tab) => (
+                <Tab
+                  key={tab}
+                  onClick={() => setActiveTab(tab)}
+                  isActive={tab === activeTab}
+                >
+                  {tab} <span> ‧ {assets[tab].length}</span>
+                </Tab>
+              ))}
+            </Tabs>
+          )}
           <Slider {...sliderSettings}>
-            {assets[activeTab].map((asset: any) => (
-              <AssetCard data={asset} key={asset.id} />
-            ))}
+            {assets &&
+              assets[activeTab].map((asset: any) => (
+                <AssetCard data={asset} key={asset.id} />
+              ))}
           </Slider>
           <Desclimer>
             Not investment advice.
@@ -90,9 +88,9 @@ export const AssetCard: React.FC<any> = ({ data }) => {
   return (
     <Card>
       <Head>
-        <Price>${price.toFixed(2)}</Price>
+        <Price>${price}</Price>
         <Change>
-          <span>{change.toFixed(2)}%</span>
+          <span>{change}%</span>
         </Change>
       </Head>
       <Logo>
@@ -150,6 +148,7 @@ const Wrap = styled(Container)`
 
   .slick-slide {
     margin: 0 8px;
+    /* transform: translateX(8px); */
   }
 `;
 
@@ -157,6 +156,7 @@ const Tabs = styled.div`
   display: flex;
   border-bottom: 1px solid #ebebeb;
   overflow: scroll;
+  flex-direction: row-reverse;
 
   ${MEDIA.PHONE`
     margin: -20px 0 40px 24px;
@@ -165,7 +165,7 @@ const Tabs = styled.div`
   ${MEDIA.DESKTOP`
     margin-top: -20px;
     margin-bottom: 40px;
-    margin-left: 0;
+    margin-left: 8px;
   `};
 `;
 

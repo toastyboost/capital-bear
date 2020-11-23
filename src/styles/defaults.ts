@@ -1,9 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
-import sliderArrow from "~/static/slider-arrow.svg";
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
 
+import sliderArrow from "~/static/slider-arrow.svg";
 import { FontsStyles } from "./fonts";
 
 export const GlobalStyles = createGlobalStyle`
@@ -161,5 +160,15 @@ export const GlobalStyles = createGlobalStyle`
       left: -32px;
     `};
 
+  }
+
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 `;

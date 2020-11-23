@@ -18,17 +18,22 @@ const sliderSettings = {
 const aboutData = [
   {
     text:
-      "“Capital Bear offers an excellent interface, great support, and convenient withdrawals. It’s been a smooth experience from the very beginning.”",
+      "Capital Bear offers an excellent interface, great support, and convenient withdrawals. It’s been a smooth experience from the very beginning",
     name: "Arishi Khitari",
     date: "July, 2020",
     socialIcon: facebookIcon,
   },
   {
     text:
-      "“1Capital Bear offers an excellent interface, great support, and convenient withdrawals. It’s been a smooth experience from the very beginning.”",
-    name: "Arishi Khitari",
-    date: "July, 2021",
-    socialIcon: facebookIcon,
+      "Capital Bear made it easy to jump in and begin trading. It’s super intuitive, and the video tutorials were especially helpful!",
+    name: "Richard Jordan",
+    date: "January, 2021",
+  },
+  {
+    text:
+      "Fell in love with the platform the moment I saw it. Its clean and simple design was what sealed the deal for me",
+    name: "Jenn Schaefer",
+    date: "une, 2020",
   },
 ];
 
@@ -40,12 +45,12 @@ export const About = () => {
           <Slider {...sliderSettings}>
             {aboutData.map(({ text, name, date, socialIcon }, key) => (
               <Quote key={key}>
-                <Text>{text}</Text>
+                <Text>«{text}»</Text>
                 <Info>
                   <Name>{name}</Name>
                   <span>‧</span>
                   <Date>{date}</Date>
-                  <Icon src={socialIcon} alt=" " />
+                  {socialIcon && <Icon src={socialIcon} alt=" " />}
                 </Info>
               </Quote>
             ))}
@@ -65,7 +70,7 @@ const Wrap = styled(Container)`
   `}
 
   ${MEDIA.DESKTOP`
-    padding: 0 24px 50px 24px;
+    padding: 0 24px 80px 24px;
   `};
 
   .slick-slider {
