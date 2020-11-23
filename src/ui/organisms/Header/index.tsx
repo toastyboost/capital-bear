@@ -1,8 +1,8 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { Logo, Burger, Link } from "~/ui/atoms";
-import { Menu, Langs } from "~/ui/molecules";
+import { Logo, Burger, Link, Langs } from "~/ui/atoms";
+import { Menu } from "~/ui/molecules";
 
 import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
         <HeaderLogo type={isMainPage ? "white" : "black"} />
         <HeaderMenu data={data} />
         <Settings>
-          {/* <HeaderLangs /> */}
+          <HeaderLangs />
           <Login href="/log-in">Log In</Login>
           <SignUp href="/sign-up">Sign Up</SignUp>
         </Settings>
@@ -101,16 +101,16 @@ const Settings = styled.div`
   `};
 `;
 
-// const HeaderLangs = styled(Langs)`
-//   // hide langs on mobile
-//   ${MEDIA.PHONE`
-//     display: none;
-//   `}
+const HeaderLangs = styled(Langs)`
+  ${MEDIA.PHONE`
+    display: none;
+  `}
 
-//   ${MEDIA.DESKTOP`
-//     display: block;
-//   `};
-// `;
+  ${MEDIA.DESKTOP`
+    display: flex;
+    margin-right: 24px;
+  `};
+`;
 
 const Login = styled(Link)`
   font-size: 14px;
