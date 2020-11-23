@@ -6,7 +6,8 @@ import { Section } from "~/ui/molecules";
 import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
 
-import plus from "~/static/plus.svg";
+import plusWhite from "~/static/plus-white.svg";
+import plusBlack from "~/static/plus-black.svg";
 import payments from "~/static/payments.svg";
 
 import { fetchAssets } from "../../../api";
@@ -100,7 +101,9 @@ export const AssetCard: React.FC<any> = ({ data }) => {
       <Content>
         <Name>{name}</Name>
         <Ticker level={3}>{ticker}</Ticker>
-        <Cta href="/link-to-asset">Open asset</Cta>
+        <Cta href="/link-to-asset">
+          <span>Open asset</span>
+        </Cta>
       </Content>
     </Card>
   );
@@ -147,11 +150,6 @@ const Wrap = styled(Container)`
 
   .slick-slide {
     margin: 0 8px;
-  }
-
-  .section-header {
-    justify-content: flex-start;
-    text-align: left;
   }
 `;
 
@@ -275,26 +273,52 @@ const Ticker = styled(Text)`
   color: rgb(188, 180, 195);
 `;
 
-const Cta = styled(Button)`
+const Cta = styled.a`
   line-height: 38px;
+  padding: 0 18px;
   font-size: 14px;
-  margin-top: 20px;
-  padding: 0 25px 0 25px;
-
-  &:after {
-    display: none;
+  font-family: "Manrope";
+  font-weight: 600;
+  background-color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+  display: block;
+  margin: 20px auto 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  transition: 0.2s;
+  position: relative;
+  box-shadow: 0 7px 14px -4px rgba(120, 110, 144, 0.13);
+  span {
+    opacity: 0;
   }
 
-  /* &:before {
+  &:hover {
+    width: 100%;
+    background-color: var(--primary);
+    span {
+      opacity: 1;
+    }
+
+    &:before {
+      background-image: url(${plusWhite});
+    }
+  }
+
+  &:before {
     content: "";
     width: 14px;
     height: 14px;
     display: inline-block;
-    background-image: url(${plus});
+    background-image: url(${plusBlack});
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 15px;
-  } */
+    position: relative;
+    left: -5px;
+    bottom: -2px;
+  }
 `;
 
 const Desclimer = styled.div`

@@ -8,7 +8,10 @@ import { Container } from "~/styles";
 import heroMobile from "~/static/hero-mobile.png";
 import heroDesktop from "~/static/hero-desktop.png";
 
-import headerBG320 from "~/static/header-bg-320.png";
+import blur320 from "~/static/blur-320.png";
+import blur480 from "~/static/blur-480.png";
+import blur960 from "~/static/blur-960.png";
+import blur1280 from "~/static/blur-1280.png";
 
 const bulletData = [
   {
@@ -59,17 +62,25 @@ export const Hero = () => {
 };
 
 const Background = styled.div`
-  background-image: url(${headerBG320}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: contain;
 
-  ${MEDIA.PHONE`
-    background-size: contain;
-  `}
+  @media (min-width: 20em) {
+    background-image: url(${blur320}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+  }
 
-  ${MEDIA.SMARTPHONE`
-    background-size: cover;
-  `}
+  @media (min-width: 26em) {
+    background-image: url(${blur480}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+  }
+
+  @media (min-width: 48em) {
+    background-image: url(${blur960}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+  }
+
+  @media (min-width: 64em) {
+    background-image: url(${blur1280}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+  }
 `;
 
 const Wrap = styled(Container)`

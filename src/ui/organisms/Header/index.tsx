@@ -101,16 +101,16 @@ const Settings = styled.div`
   `};
 `;
 
-const HeaderLangs = styled(Langs)`
-  // hide langs on mobile
-  ${MEDIA.PHONE`
-    display: none;
-  `}
+// const HeaderLangs = styled(Langs)`
+//   // hide langs on mobile
+//   ${MEDIA.PHONE`
+//     display: none;
+//   `}
 
-  ${MEDIA.DESKTOP`
-    display: block;
-  `};
-`;
+//   ${MEDIA.DESKTOP`
+//     display: block;
+//   `};
+// `;
 
 const Login = styled(Link)`
   font-size: 14px;
@@ -128,7 +128,7 @@ const SignUp = styled(Link)`
 
   ${MEDIA.DESKTOP`
     display: block;
-    border: 1px solid rgba(105,57,207, 0.25);
+    border: 1px solid rgba(255,255,255,0.3);
     border-radius: 50px;
     padding: 5px 16px 7px 16px;
     margin-left: 20px;
