@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{YGCG:function(n,e,t){"use strict";t.r(e);var u=t("q1tI"),o=t("17a/");e.default=function(){return u.createElement(o.b,null,"sign up form")}}}]);
