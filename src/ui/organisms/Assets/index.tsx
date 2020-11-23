@@ -163,9 +163,7 @@ const Tabs = styled.div`
   `}
 
   ${MEDIA.DESKTOP`
-    margin-top: -20px;
-    margin-bottom: 40px;
-    margin-left: 8px;
+    margin: -20px auto 40px auto;
   `};
 `;
 

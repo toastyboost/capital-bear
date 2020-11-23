@@ -24,7 +24,8 @@ export const Devices = () => {
               <BlockIcon name="phone" />
               <BlockTitle level={2}>Sleek performance on any device</BlockTitle>
               <BlockDescription level={1}>
-                Trade on Web or Mobile and switch between the two without a hitch
+                Trade on Web or Mobile and switch between the two without a
+                hitch
               </BlockDescription>
               <Browsers src={browsers} alt="" />
               <Cta href="/" type="ghost">
@@ -61,6 +62,35 @@ const DevicesBlocks = styled.div`
   flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
+  & > div {
+    ${MEDIA.PHONE`
+      &:nth-child(1) {
+        order: 1
+      }
+
+      &:nth-child(2) {
+        order: 0
+      }
+    `};
+
+    ${MEDIA.DESKTOP`
+      &:nth-child(1) {
+        order: 0
+      }
+
+      &:nth-child(2) {
+        order: 1
+      }
+    `};
+
+    &:nth-child(3) {
+      order: 3;
+    }
+
+    &:nth-child(4) {
+      order: 4;
+    }
+  }
 `;
 
 const Device = styled.div`

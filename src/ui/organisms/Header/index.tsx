@@ -26,13 +26,13 @@ const data = [
   },
 ];
 
-// const isMainPage = window.location.pathname == "/";
+const isMainPage = Boolean(window) && window.location.pathname == "/";
 
 export const Header: React.FC = () => {
   return (
     <Wrap>
       <HeaderContainer>
-        <HeaderLogo type={"white"} />
+        <HeaderLogo type={isMainPage ? "white" : "black"} />
         <HeaderMenu data={data} />
         <Settings>
           {/* <HeaderLangs /> */}

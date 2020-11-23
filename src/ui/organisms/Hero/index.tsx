@@ -42,7 +42,8 @@ export const Hero = () => {
       <Wrap>
         <Title level={1}>Trade Stocks, Forex, Options and Cryptos</Title>
         <HeroText level={1}>
-          Follow other investors, discover companies to believe in, invest with any.
+          Follow other investors, discover companies to believe in, invest with
+          any.
         </HeroText>
         <Cta href="/to-open-free-account">Open free account</Cta>
         <HeroMobileImage src={heroMobile} alt="" />
@@ -67,19 +68,23 @@ const Background = styled.div`
   background-size: contain;
 
   @media (min-width: 20em) {
-    background-image: url(${blur320}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+    background-image: url(${blur320}),
+      linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }
 
   @media (min-width: 26em) {
-    background-image: url(${blur480}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+    background-image: url(${blur480}),
+      linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }
 
   @media (min-width: 48em) {
-    background-image: url(${blur960}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+    background-image: url(${blur960}),
+      linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }
 
   @media (min-width: 64em) {
-    background-image: url(${blur1280}), linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
+    background-image: url(${blur1280}),
+      linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }
 `;
 
@@ -158,11 +163,11 @@ const Bullet = styled.div`
 
   ${MEDIA.PHONE`
     width: 50%;
-     
+    padding-bottom: 25px;
   `}
 
   ${MEDIA.DESKTOP`
-    width: 24%;
+    width: 25%;
   `};
 `;
 
