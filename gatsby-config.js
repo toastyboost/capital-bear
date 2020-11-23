@@ -42,7 +42,7 @@ module.exports = {
           "~/libs": `${__dirname}/src/libs`,
           "~/store": `${__dirname}/src/store`,
         },
-        extensions: ["js, ts, tsx"],
+        extensions: ["js"],
       },
     },
   ],
