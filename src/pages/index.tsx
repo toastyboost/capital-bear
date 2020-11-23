@@ -1,18 +1,25 @@
 import * as React from "react";
 
-import { Layout } from "~/ui/templates";
-import { Hero, Steps, Toolbox, TrendingAssets, Devices, About } from "~/ui/organisms";
+import { GenericLayout } from "~/ui/templates";
+import {
+  Hero,
+  Steps,
+  Toolbox,
+  TrendingAssets,
+  Devices,
+  About,
+} from "~/ui/organisms";
 
 const Index: React.FC = () => {
   return (
-    <Layout>
+    <GenericLayout>
       <Hero />
       <Steps />
       <Toolbox />
       <TrendingAssets />
       <Devices />
       <About />
-    </Layout>
+    </GenericLayout>
   );
 };
 

@@ -26,16 +26,18 @@ const data = [
   },
 ];
 
-export const Header = () => {
+const isMainPage = window.location.pathname == "/";
+
+export const Header: React.FC = () => {
   return (
     <Wrap>
       <HeaderContainer>
-        <HeaderLogo type="white" />
+        <HeaderLogo type={isMainPage ? "white" : "black"} />
         <HeaderMenu data={data} />
         <Settings>
           {/* <HeaderLangs /> */}
-          <Login href="/login">Log In</Login>
-          <SignUp href="/signup">Sign Up</SignUp>
+          <Login href="/log-in">Log In</Login>
+          <SignUp href="/sign-up">Sign Up</SignUp>
         </Settings>
         <MobileBurger isVisible={false} onClick={() => null} />
       </HeaderContainer>

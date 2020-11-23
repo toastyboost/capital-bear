@@ -21,9 +21,9 @@ export const GlobalStyles = createGlobalStyle`
     --text-font: "Manrope";
     --primary: rgb(105, 57, 207);
     --warning: rgb(251, 86, 81);
-    --text: rgb(37, 45, 61);
+    --text: #425466;
     --border: rgba(0, 0, 0, 0.05);
-    --block-bg: rgb(39, 38, 45);
+    --block-bg: rgb(249, 249, 251);
   }
 
   body,
@@ -88,6 +88,7 @@ export const GlobalStyles = createGlobalStyle`
   menu,
   ol,
   ul {
+    font-family: var(--text-font);
     margin: 0;
     padding: 0;
   }

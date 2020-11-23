@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Header, Footer } from "~/ui/organisms";
 import { GlobalStyles } from "~/styles";
 
-export const Layout: React.FC = ({ children }) => (
+export const GenericLayout: React.FC = ({ children }) => (
   <>
     <GlobalStyles />
     <>
@@ -15,4 +15,6 @@ export const Layout: React.FC = ({ children }) => (
   </>
 );
 
-const Main = styled.main``;
+const Main = styled.main`
+  padding-bottom: 40px;
+`;

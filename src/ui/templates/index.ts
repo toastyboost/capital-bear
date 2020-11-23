@@ -1,1 +1,2 @@
-export { Layout } from "./Layout";
+export { GenericLayout } from "./Generic";
+export { SystemLayout } from "./System";
