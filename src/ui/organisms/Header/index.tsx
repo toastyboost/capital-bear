@@ -26,7 +26,8 @@ const data = [
   },
 ];
 
-const isMainPage = Boolean(window) && window.location.pathname == "/";
+const isMainPage =
+  typeof window !== "undefined" && window.location.pathname == "/";
 
 export const Header: React.FC = () => {
   return (
