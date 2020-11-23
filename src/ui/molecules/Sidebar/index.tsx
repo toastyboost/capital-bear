@@ -22,10 +22,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       />
       <Side isVisible={isVisible}>
         <Header>
-          <SideBurger
-            isVisible={isVisible}
-            onClick={() => toggler(!isVisible)}
-          />
+          <SideBurger isVisible={false} onClick={() => toggler(!isVisible)} />
         </Header>
         <Content>
           {data.map(({ path, title }) => (

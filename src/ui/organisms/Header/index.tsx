@@ -26,7 +26,7 @@ const data = [
   },
 ];
 
-const isMainPage = typeof window !== "undefined" && true;
+const isMainPage = true;
 
 export const Header: React.FC = () => {
   const [isVisible, setVisiblility] = React.useState<boolean>(false);
