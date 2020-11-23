@@ -17,7 +17,8 @@
     "start": "yarn clean && gatsby develop",
     "build": "yarn clean && gatsby build",
     "serve": "gatsby serve",
-    "update": "ncu -u"
+    "update": "ncu -u",
+    "build-github": "gatsby build --prefix-paths"
   },
   "dependencies": {
     "@types/react-slick": "^0.23.4",
