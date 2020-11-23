@@ -1,16 +1,19 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { Header, Footer } from "~/ui/organisms";
+import { InsideHeader, InsideFooter, Header, Footer } from "~/ui/organisms";
 import { GlobalStyles } from "~/styles";
 
-export const GenericLayout: React.FC = ({ children }) => (
+export const GenericLayout: React.FC<any> = ({
+  children,
+  isInside = false,
+}) => (
   <>
     <GlobalStyles />
     <>
-      <Header />
+      {isInside ? <InsideHeader /> : <Header />}
       <Main>{children}</Main>
-      <Footer />
+      {isInside ? <InsideFooter /> : <Footer />}
     </>
   </>
 );

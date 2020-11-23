@@ -23,8 +23,8 @@ export const Langs: React.FC<Props> = ({ className }) => {
 
   return (
     <Wrap className={className}>
-      <Label>{lang}</Label>
-      <Dropdown>
+      <Label className="label">{lang}</Label>
+      <Dropdown className="dropdown">
         {langs.map(({ name, link }) => (
           <Item
             key={link}
@@ -78,6 +78,7 @@ const Dropdown = styled.div`
   border-radius: 10px;
   visibility: hidden;
   transform: translateY(-6px);
+  border: 1px solid rgb(225, 222, 231);
 `;
 
 const Item = styled.a`

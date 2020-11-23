@@ -6,3 +6,4 @@ export { Title } from './Title'
 export { Text } from './Text'
 export { Icon } from './Icon';
 export { Langs } from './Langs'
+export { GDPR } from "./GDPR";

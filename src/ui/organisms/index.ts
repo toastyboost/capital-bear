@@ -6,3 +6,5 @@ export { Toolbox } from './Toolbox'
 export { TrendingAssets } from './Assets'
 export { Devices } from './Devices'
 export { About } from './About'
+export { InsideHeader } from './InsideHeader';
+export { InsideFooter } from './InsideFooter'

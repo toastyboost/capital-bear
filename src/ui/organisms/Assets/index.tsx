@@ -15,9 +15,11 @@ import { fetchAssets } from "../../../api";
 const sliderSettings = {
   infinite: false,
   variableWidth: true,
-  speed: 500,
+  speed: 900,
   slidesToShow: 4,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 1920,
@@ -62,12 +64,14 @@ export const TrendingAssets = () => {
               ))}
             </Tabs>
           )}
-          <Slider {...sliderSettings}>
-            {assets &&
-              assets[activeTab].map((asset: any) => (
+
+          {assets && (
+            <Slider {...sliderSettings}>
+              {assets[activeTab].map((asset: any) => (
                 <AssetCard data={asset} key={asset.id} />
               ))}
-          </Slider>
+            </Slider>
+          )}
           <Desclimer>
             Not investment advice.
             <br />

@@ -10,9 +10,11 @@ import facebookIcon from "~/static/facebook.svg";
 
 const sliderSettings = {
   infinite: false,
-
   slidesToShow: 1,
   slidesToScroll: 1,
+  speed: 900,
+  autoplay: true,
+  autoplaySpeed: 4000,
 };
 
 const aboutData = [
@@ -33,7 +35,7 @@ const aboutData = [
     text:
       "Fell in love with the platform the moment I saw it. Its clean and simple design was what sealed the deal for me",
     name: "Jenn Schaefer",
-    date: "une, 2020",
+    date: "June, 2020",
   },
 ];
 

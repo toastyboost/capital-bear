@@ -2,39 +2,22 @@ import * as React from "react";
 import styled from "styled-components";
 
 import { Logo, Burger, Link, Langs } from "~/ui/atoms";
-import { Menu, Sidebar } from "~/ui/molecules";
+import { Sidebar } from "~/ui/molecules";
 
 import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
 
-export const data = [
-  {
-    path: "/trade",
-    title: "Trade",
-  },
-  {
-    path: "/for-traders",
-    title: "For traders",
-  },
-  {
-    path: "/about-us",
-    title: "About us",
-  },
-  {
-    path: "/regulation",
-    title: "Regulation",
-  },
-];
+import { data } from "~/ui/organisms/Header";
+import purpleArrow from "~/static/arrow-purple.svg";
 
-export const Header: React.FC = () => {
+export const InsideHeader: React.FC = () => {
   const [isVisible, setVisiblility] = React.useState<boolean>(false);
 
   return (
     <>
       <Wrap>
         <HeaderContainer>
-          <HeaderLogo type="white" />
-          <HeaderMenu data={data} />
+          <HeaderLogo type="black" />
           <Settings>
             <HeaderLangs />
             <Login href="/log-in">Log In</Login>
@@ -86,16 +69,6 @@ const HeaderLogo = styled(Logo)`
   `};
 `;
 
-const HeaderMenu = styled(Menu)`
-  ${MEDIA.PHONE`
-    display: none;
-  `}
-
-  ${MEDIA.DESKTOP`
-    display: block;
-  `};
-`;
-
 const Settings = styled.div`
   display: flex;
   align-items: center;
@@ -110,6 +83,29 @@ const Settings = styled.div`
 `;
 
 const HeaderLangs = styled(Langs)`
+  .label {
+    color: var(--text);
+
+    &:after {
+      background-image: url(${purpleArrow});
+      transform: rotate(0);
+      width: 13px;
+      height: 8px;
+      margin-left: 12px;
+      bottom: 0;
+    }
+  }
+
+  &:hover {
+    .label {
+      border-color: rgb(225, 222, 231);
+
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
   ${MEDIA.PHONE`
     display: none;
   `}
@@ -117,17 +113,17 @@ const HeaderLangs = styled(Langs)`
   ${MEDIA.DESKTOP`
     display: flex;
     margin-right: 24px;
+
+     
   `};
 `;
 
 const Login = styled(Link)`
   font-size: 14px;
-  color: #d8d8d8;
+  color: var(--primary);
 `;
 
 const SignUp = styled(Link)`
-  color: #fff;
-
   // hide signup on mobile
 
   ${MEDIA.PHONE`
@@ -136,13 +132,15 @@ const SignUp = styled(Link)`
 
   ${MEDIA.DESKTOP`
     display: block;
-    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--primary);
+    border: 1px solid var(--primary);
     border-radius: 50px;
     padding: 5px 16px 7px 16px;
     margin-left: 20px;
 
     &:hover {
       background-color: var(--primary);
+      color: #fff;
       border: 1px solid var(--primary);
     }
   `};

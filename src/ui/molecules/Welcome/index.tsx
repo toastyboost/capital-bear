@@ -3,14 +3,16 @@ import styled from "styled-components";
 
 import { Title, Text } from "~/ui/atoms";
 import check from "~/static/check.svg";
+import smallLogo from "~/static/logo-small.svg";
 
 export const Welcome = () => {
   return (
     <Wrap>
-      <SectionTitle level={1}>
+      <Logo src={smallLogo} />
+      <SectionTitle level={2}>
         Instant access to investing, anytime and anywhere
       </SectionTitle>
-      <SectionText level={1}>
+      <SectionText level={2}>
         Investing has never been easier. Everything you are looking for in an
         ultimate investment platform — on the device of your choice.
       </SectionText>
@@ -26,6 +28,14 @@ export const Welcome = () => {
 const Wrap = styled.div`
   background-color: var(--block-bg);
   padding: 50px;
+  width: 100%;
+`;
+
+const Logo = styled.img`
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin-bottom: 40px;
 `;
 
 const SectionTitle = styled(Title)`

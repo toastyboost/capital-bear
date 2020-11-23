@@ -5,57 +5,18 @@ import { Container } from "~/styles";
 import { Logo } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
 
-export const regulationLinks = [
-  {
-    title: "Terms & Conditions",
-    href: "",
-  },
-  {
-    title: "General Fees",
-    href: "",
-  },
-];
+import {
+  regulationLinks,
+  policiesLinks,
+  privaciesLinks,
+} from "~/ui/organisms/Footer";
 
-export const policiesLinks = [
-  {
-    title: "Withdrawal Policy",
-    href: "",
-  },
-  {
-    title: "Payment Policy",
-    href: "",
-  },
-  {
-    title: "Privacy Policy",
-    href: "",
-  },
-  {
-    title: "Order Execution Policy",
-    href: "",
-  },
-];
-
-export const privaciesLinks = [
-  {
-    title: "Conflict of Interest Policy",
-    href: "",
-  },
-  {
-    title: "Code of Conduct",
-    href: "",
-  },
-  {
-    title: "Anti Money Laundering (AML) and Know Your Customer (KYC) Policy",
-    href: "",
-  },
-];
-
-export const Footer = () => {
+export const InsideFooter = () => {
   return (
     <Wrap>
       <Container>
         <Buttons>
-          <FooterLogo type="white" />
+          <FooterLogo type="black" />
           {/* apps here */}
         </Buttons>
         <LinksWrap>
@@ -103,7 +64,6 @@ export const Footer = () => {
 const Wrap = styled.footer`
   font-family: "Manrope";
   padding: 60px 0;
-  background-color: rgb(40, 49, 72);
 
   ${MEDIA.PHONE`
     text-align: center; 
@@ -152,7 +112,7 @@ const Links = styled.div`
 `;
 
 const Title = styled.div`
-  color: rgb(255, 255, 255);
+  color: #252d3d;
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -161,8 +121,7 @@ const Title = styled.div`
 const Link = styled.a`
   width: 100%;
   font-size: 14px;
-  color: #f9f9fb;
-  opacity: 0.7;
+  color: #7d828b;
   max-width: 180px;
   font-weight: 500;
   transition: 0.1s;
@@ -182,7 +141,7 @@ const Link = styled.a`
 `;
 
 const Email = styled.a`
-  color: rgb(255, 255, 255);
+  color: #252d3d;
 
   &:hover {
     color: var(--primary);
@@ -209,8 +168,7 @@ const CopyRights = styled.div`
 `;
 
 const Copy = styled.div`
-  color: #f9f9fb;
-  opacity: 0.6;
+  color: #7d828b;
 
   ${MEDIA.PHONE`
     margin-bottom: 20px;
@@ -222,6 +180,5 @@ const Copy = styled.div`
 `;
 
 const Rights = styled.div`
-  color: #f9f9fb;
-  opacity: 0.6;
+  color: #7d828b;
 `;

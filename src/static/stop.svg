@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="110px" viewBox="0 0 110 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chapter_ic copy</title>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+        <filter x="-55.0%" y="-35.0%" width="210.0%" height="210.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="3.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="14" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="14" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.471275106   0 0 0 0 0.429952446   0 0 0 0 0.565726902  0 0 0 0.127622378 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="capital_bear_main_unavaible" transform="translate(-665.000000, -150.000000)">
+            <g id="Group-2" transform="translate(347.000000, 108.000000)">
+                <g id="Group-78" transform="translate(338.000000, 48.000000)">
+                    <g id="chapter_rect">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="chapter_pic" transform="translate(14.000000, 14.000000)">
+                        <rect fill="#D8D8D8" opacity="0" x="0" y="0" width="42" height="42"></rect>
+                        <g id="prohibit-bold">
+                            <rect id="Rectangle" x="0" y="0" width="42" height="42"></rect>
+                            <circle id="Oval" stroke="#FB5651" stroke-width="3.9375" stroke-linecap="round" stroke-linejoin="round" cx="21.0000804" cy="21" r="15.75"></circle>
+                            <line x1="9.86314875" y1="9.86306836" x2="32.137012" y2="32.1369316" id="Path" stroke="#FB5651" stroke-width="3.9375" stroke-linecap="round" stroke-linejoin="round"></line>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
