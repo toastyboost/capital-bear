@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.tsx"],"names":["ErrorPage"],"mappings":"6FAAA,uBAQeA,UANa,kBAC1B,gCACE","file":"component---src-pages-404-tsx-13ecbdecf1b8ffeab187.js","sourcesContent":["import * as React from \"react\";\n\nconst ErrorPage: React.FC = () => (\n  <>\n    <h1>Not Found</h1>\n  </>\n);\n\nexport default ErrorPage;\n"],"sourceRoot":""}
