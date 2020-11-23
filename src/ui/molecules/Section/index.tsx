@@ -13,7 +13,7 @@ type Props = {
 export const Section: React.FC<Props> = ({ className, children, icon, title, description }) => {
   return (
     <Wrap className={className}>
-      <Header className={"section-header"}>
+      <Header className="section-header">
         <SectionIcon name={icon} />
         <SectionTitle level={2}>{title}</SectionTitle>
         {description && <SectionDescription level={1}>{description}</SectionDescription>}
