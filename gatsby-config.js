@@ -4,7 +4,8 @@ dotenv.config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
- 
+const isProduction = process.env.NODE_ENV === "production";
+
 const siteUrl = "https://toastyboost.github.io";
 
  
