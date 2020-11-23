@@ -4,14 +4,18 @@ dotenv.config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const siteUrl = process.env.WEBSITE_URL;
+ 
+const siteUrl = "https://toastyboost.github.io";
 
+ 
 module.exports = {
+  pathPrefix: !isProduction || "/capital-bear",
   proxy: {
     prefix: "/api",
     url: "https://fininfo.iqoption.com",
   },
   siteMetadata: {
+
     siteUrl,
     themeColor: "#2c52da",
     backgroundColor: "#2c52da",
