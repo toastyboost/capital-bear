@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 
 import { Logo, Burger, Link, Langs } from "~/ui/atoms";
-import { Menu } from "~/ui/molecules";
+import { Menu, Sidebar } from "~/ui/molecules";
 
 import { MEDIA } from "~/libs/media";
 import { Container } from "~/styles";
@@ -26,26 +26,29 @@ const data = [
   },
 ];
 
-const insidePages = ["/log-in", "/sign-up", ...data.map(({ path }) => path)];
-
-const isMainPage =
-  typeof window !== "undefined" &&
-  !insidePages.includes(window.location.pathname);
+const isMainPage = typeof window !== "undefined" && true;
 
 export const Header: React.FC = () => {
+  const [isVisible, setVisiblility] = React.useState<boolean>(false);
   return (
-    <Wrap>
-      <HeaderContainer>
-        <HeaderLogo type={isMainPage ? "white" : "black"} />
-        <HeaderMenu data={data} />
-        <Settings>
-          <HeaderLangs />
-          <Login href="/log-in">Log In</Login>
-          <SignUp href="/sign-up">Sign Up</SignUp>
-        </Settings>
-        <MobileBurger isVisible={false} onClick={() => null} />
-      </HeaderContainer>
-    </Wrap>
+    <>
+      <Wrap>
+        <HeaderContainer>
+          <HeaderLogo type={isMainPage ? "white" : "black"} />
+          <HeaderMenu data={data} />
+          <Settings>
+            <HeaderLangs />
+            <Login href="/log-in">Log In</Login>
+            <SignUp href="/sign-up">Sign Up</SignUp>
+          </Settings>
+          <MobileBurger
+            isVisible={isVisible}
+            onClick={() => setVisiblility(!isVisible)}
+          />
+        </HeaderContainer>
+      </Wrap>
+      <Sidebar isVisible={isVisible} toggler={setVisiblility} data={data} />
+    </>
   );
 };
 
