@@ -8,9 +8,8 @@ const isProduction = process.env.NODE_ENV === "production";
 
 const siteUrl = "https://toastyboost.github.io";
 
- 
 module.exports = {
-  pathPrefix: !isProduction ? "/capital-bear" : '',
+  pathPrefix: "/capital-bear",
   proxy: {
     prefix: "/api",
     url: "https://fininfo.iqoption.com",
@@ -25,6 +24,7 @@ module.exports = {
     "gatsby-plugin-typescript",
     "gatsby-plugin-typescript-checker",
     "gatsby-plugin-webpack-size",
+    "gatsby-plugin-no-sourcemaps",
     {
       resolve: "gatsby-plugin-styled-components",
       options: {
