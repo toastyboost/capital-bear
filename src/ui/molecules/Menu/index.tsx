@@ -11,7 +11,11 @@ export const Menu: React.FC<MenuProps> = ({ className, data }) => {
   return (
     <Wrap className={className}>
       {data.map(({ path, title }) => {
-        return <MenuLink key={path}>{title}</MenuLink>;
+        return (
+          <MenuLink key={path} href={path}>
+            {title}
+          </MenuLink>
+        );
       })}
     </Wrap>
   );

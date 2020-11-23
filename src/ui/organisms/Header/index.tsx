@@ -26,8 +26,11 @@ const data = [
   },
 ];
 
+const insidePages = ["/log-in", "/sign-up", ...data.map(({ path }) => path)];
+
 const isMainPage =
-  typeof window !== "undefined" && window.location.pathname == "/";
+  typeof window !== "undefined" &&
+  !insidePages.includes(window.location.pathname);
 
 export const Header: React.FC = () => {
   return (
@@ -70,12 +73,14 @@ const HeaderLogo = styled(Logo)`
     order: 1;
     left: -4px;
     bottom: -1px;
+    width: auto;
   `}
 
   ${MEDIA.DESKTOP`
     order: 0;
     left: 0;
     bottom: 0;
+    width: 280px;
   `};
 `;
 
