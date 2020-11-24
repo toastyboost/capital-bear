@@ -143,6 +143,8 @@ const Wrap = styled(Container)`
 
   .slick-slider {
     width: 100%;
+    overflow: hidden;
+    max-height: 354px;
   }
 
   .slick-next {
