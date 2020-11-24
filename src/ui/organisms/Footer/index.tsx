@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 import { Logo } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
 
@@ -109,7 +109,7 @@ const Wrap = styled.footer`
     text-align: center; 
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     text-align: left;
   `};
 `;
@@ -123,7 +123,7 @@ const Buttons = styled.div`
     justify-content: center;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     justify-content: space-between;
   `};
 `;
@@ -136,7 +136,7 @@ const FooterLogo = styled(Logo)`
 `;
 
 const LinksWrap = styled.div`
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     display: flex;
   `};
 `;
@@ -146,7 +146,7 @@ const Links = styled.div`
   flex-direction: column;
   padding-bottom: 50px;
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     margin-right: 50px;
   `};
 `;
@@ -176,16 +176,16 @@ const Link = styled.a`
     margin: 0 auto 6px auto;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     margin: 0 0 12px 0;
   `};
 `;
 
 const Email = styled.a`
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255, 0.7);
 
   &:hover {
-    color: var(--primary);
+    color: rgb(255, 255, 255, 1);
   }
 
   ${MEDIA.PHONE`
@@ -193,14 +193,14 @@ const Email = styled.a`
     display: block;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     margin-bottom: 60px;
     display: inline-block;
   `};
 `;
 
 const CopyRights = styled.div`
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -216,7 +216,7 @@ const Copy = styled.div`
     margin-bottom: 20px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     margin-bottom: 0;
   `};
 `;

@@ -18,7 +18,12 @@ const levels = {
   4: "h4",
 } as any;
 
-export const Title: React.FC<Props> = ({ className, children, level, dangerouslySetInnerHTML }) => (
+export const Title: React.FC<Props> = ({
+  className,
+  children,
+  level,
+  dangerouslySetInnerHTML,
+}) => (
   <Wrap
     className={`${className} title`}
     as={levels[level]}
@@ -44,7 +49,7 @@ const Wrap = styled.div.attrs<Levels>(map)`
       line-height: 38px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.SMARTPHONE`
       font-size: 40px;
       line-height: 40px;
     `};
@@ -57,7 +62,7 @@ const Wrap = styled.div.attrs<Levels>(map)`
       line-height: 36px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.SMARTPHONE`
       font-size: 39px;
       line-height: 42px; 
     `};
@@ -70,7 +75,7 @@ const Wrap = styled.div.attrs<Levels>(map)`
       line-height: 30px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.SMARTPHONE`
       font-size: 30px;
       line-height: 40px; 
     `};
@@ -83,7 +88,7 @@ const Wrap = styled.div.attrs<Levels>(map)`
       line-height: 30px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.SMARTPHONE`
       font-size: 24px;
       line-height: 30px; 
     `};

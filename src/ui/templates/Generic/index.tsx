@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 
 import { InsideHeader, InsideFooter, Header, Footer } from "~/ui/organisms";
-import { GlobalStyles } from "~/styles";
+import { GlobalStyles } from "~/styles/defaults";
 
 export const GenericLayout: React.FC<any> = ({
   children,

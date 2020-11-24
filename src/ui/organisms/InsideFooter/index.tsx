@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import styled from "styled-components";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 import { Logo } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
 

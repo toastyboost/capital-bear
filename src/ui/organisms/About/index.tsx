@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { Button } from "~/ui/atoms";
 import { Section } from "~/ui/molecules";
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 import facebookIcon from "~/static/facebook.svg";
 
@@ -68,23 +68,16 @@ const Wrap = styled(Container)`
   overflow: hidden;
 
   ${MEDIA.PHONE`
-    padding: 0 0 50px 0;
+   padding-top: 50px;
   `}
 
-  ${MEDIA.DESKTOP`
-    padding: 0 24px 80px 24px;
+  ${MEDIA.SMARTPHONE`
+    padding-top: 80px;
+    padding-bottom: 40px;
   `};
 
   .slick-slider {
     width: 100%;
-
-    ${MEDIA.PHONE`
-      transform: translateX(24px);
-    `}
-
-    ${MEDIA.DESKTOP`
-      transform: translateX(0);
-    `};
   }
 
   .slick-arrow.slick-disabled {
@@ -105,7 +98,6 @@ const Quote = styled.div`
   border-radius: 12px;
 
   ${MEDIA.PHONE`
-    width: 270px !important;
     padding: 54px 25px 25px 25px;
 
     span {
@@ -113,8 +105,7 @@ const Quote = styled.div`
     }
   `}
 
-  ${MEDIA.DESKTOP`
-    width: 100% !important;
+  ${MEDIA.SMARTPHONE`
     padding: 54px 110px 65px 110px;
 
     span {
@@ -135,7 +126,7 @@ const Text = styled.p`
     line-height: 27px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     font-size: 30px;
     line-height: 44px;
   `};
@@ -145,7 +136,7 @@ const Info = styled.div`
   font-size: 18px;
   line-height: 1;
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     margin-top: 60px;
     display: flex;
     align-items: center;
@@ -161,7 +152,7 @@ const Name = styled.p`
     padding-top: 45px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     padding-top: 0;
   `};
 `;
@@ -174,7 +165,7 @@ const Date = styled.p`
     padding-top: 5px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     padding-top: 0;
     margin: 0 20px 0 0;
   `};
@@ -188,7 +179,7 @@ const Icon = styled.img`
     margin: 12px 0 auto 0;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     margin: 0;
   `};
 `;

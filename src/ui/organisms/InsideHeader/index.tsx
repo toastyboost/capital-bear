@@ -5,7 +5,7 @@ import { Logo, Burger, Link, Langs } from "~/ui/atoms";
 import { Sidebar } from "~/ui/molecules";
 
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 import { data } from "~/ui/organisms/Header";
 import purpleArrow from "~/static/arrow-purple.svg";
@@ -148,6 +148,15 @@ const SignUp = styled(Link)`
 
 const MobileBurger = styled(Burger)`
   // show burger on mobile
+
+  & > div > div {
+    background-color: #000;
+    &:before,
+    &:after {
+      background-color: #000;
+      background-color: #000;
+    }
+  }
 
   ${MEDIA.PHONE`
     display: flex;

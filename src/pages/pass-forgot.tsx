@@ -22,8 +22,10 @@ export default PassForgot;
 
 const ForgotTitle = styled(Title)`
   width: 100%;
+  padding-left: 50px;
 `;
 
 const ForgotDescription = styled(Text)`
   margin-top: 10px;
+  padding-left: 50px;
 `;

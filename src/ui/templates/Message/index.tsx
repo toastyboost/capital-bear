@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 import { GenericLayout } from "~/ui/templates";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 export const MessageLayout: React.FC = ({ children }) => (
   <GenericLayout isInside>

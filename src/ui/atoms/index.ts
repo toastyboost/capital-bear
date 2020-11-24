@@ -7,3 +7,4 @@ export { Text } from './Text'
 export { Icon } from './Icon';
 export { Langs } from './Langs'
 export { GDPR } from "./GDPR";
+export { Container } from './Container'

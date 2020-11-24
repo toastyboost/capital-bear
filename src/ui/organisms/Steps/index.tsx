@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Title, Text, Button } from "~/ui/atoms";
 import { Section } from "~/ui/molecules";
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 import step1 from "~/static/step-1.png";
 import step2 from "~/static/step-2.png";
@@ -49,7 +49,7 @@ export const Steps = () => {
         {stepsData.map(({ title, text, imageSrc }, key) => (
           <Step key={key}>
             <Left>
-              <Tag level={3}>Step {key + 1}</Tag>
+              <Tag>Step {key + 1}</Tag>
               <StepTitle
                 level={3}
                 dangerouslySetInnerHTML={{ __html: title }}
@@ -74,7 +74,7 @@ const Wrap = styled(Container)`
     padding-bottom: 51px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     padding-bottom: 81px;
   `};
 `;
@@ -84,13 +84,18 @@ const Left = styled.div`
     text-align: center;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     text-align: left;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
   `};
+
+  ${MEDIA.TABLET`
+    width: 420px;
+  `}
 `;
 
 const Right = styled.div``;
@@ -100,7 +105,7 @@ const Step = styled.div`
     padding-bottom: 50px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     display: flex;
     margin: 0 auto;
     padding-bottom: 80px;
@@ -109,8 +114,9 @@ const Step = styled.div`
 
 const StepTitle = styled(Title)`
   padding-bottom: 15px;
+  width: 100%;
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     max-width: 355px;
   `}
 `;
@@ -118,11 +124,15 @@ const StepTitle = styled(Title)`
 const StepsSection = styled(Section)`
   ${Step} {
     &:nth-child(odd) {
-      ${MEDIA.DESKTOP`
+      ${MEDIA.TABLET`
         flex-direction: row-reverse;
       `}
 
       ${Left} {
+        ${MEDIA.TABLET`
+          margin-left: 36px;
+        `}
+
         ${MEDIA.DESKTOP`
           margin-left: 120px;
         `}
@@ -131,8 +141,12 @@ const StepsSection = styled(Section)`
 
     &:nth-child(even) {
       ${Left} {
-        ${MEDIA.DESKTOP`
+        ${MEDIA.TABLET`
           max-width: 360px;
+          margin-right: 36px;
+        `}
+
+        ${MEDIA.DESKTOP`
           margin-right: 180px;
         `}
       }
@@ -140,16 +154,17 @@ const StepsSection = styled(Section)`
   }
 `;
 
-const Tag = styled(Text)`
+const Tag = styled.div`
   border: 2px solid #ff754c;
   border-radius: 9px;
-  padding: 2px 10px;
+  padding: 4px 10px 2px 10px;
   display: inline-block;
+  font-size: 12px;
   font-weight: 600;
   margin-bottom: 20px;
   text-transform: uppercase;
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     align-self: flex-start;
   `};
 `;
@@ -158,7 +173,7 @@ const StepText = styled(Text)`
   padding-bottom: 35px;
   color: #27262d;
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     max-width: 360px;
   `};
 `;
@@ -168,6 +183,11 @@ const Image = styled.img`
     width: 100%;
     height: 100%;
   `}
+
+  ${MEDIA.TABLET`
+    max-width: 420px;
+    max-height: 420px;
+  `};
 
   ${MEDIA.DESKTOP`
     width: 420px;

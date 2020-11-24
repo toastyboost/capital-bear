@@ -1,15 +1,13 @@
 import { css } from "styled-components";
 
 import {
-  GilroyBoldOTF, GilroyLightOTF, GilroyMediumOTF, GilroyRegularOTF, GilroySemiBoldOTF, GilroyThinOTF,
+  GilroyBoldOTF, GilroyMediumOTF, GilroyRegularOTF, GilroySemiBoldOTF,
 } from "~/static/fonts/Gilroy";
 
 import {
   ManropeRegularTTF,
   ManropeBoldTTF,
-  ManropeExtraBoldTTF,
-  ManropeExtraLightTTF,
-  ManropeLightTTF,
+
   ManropeSemiBold,
   ManropeMedium
 } from "~/static/fonts/Manrope";
@@ -34,22 +32,6 @@ export const FontsStyles = css`
 
   @font-face {
     font-family: "Gilroy", sans-serif;
-    src: url(${GilroyThinOTF});
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Gilroy", sans-serif;
-    src: url(${GilroyLightOTF});
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Gilroy", sans-serif;
     src: url(${GilroyMediumOTF});
     font-weight: 500;
     font-style: normal;
@@ -63,7 +45,6 @@ export const FontsStyles = css`
     font-style: normal;
     font-display: swap;
   }
-
 
   // Manrope
 
@@ -79,30 +60,6 @@ export const FontsStyles = css`
     font-family: "Manrope", Arial, Helvetica, sans-serif;
     src: url(${ManropeBoldTTF});
     font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Manrope", Arial, Helvetica, sans-serif;
-    src: url(${ManropeExtraBoldTTF});
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Manrope", Arial, Helvetica, sans-serif;
-    src: url(${ManropeExtraLightTTF});
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Manrope", Arial, Helvetica, sans-serif;
-    src: url(${ManropeLightTTF});
-    font-weight: 300;
     font-style: normal;
     font-display: swap;
   }

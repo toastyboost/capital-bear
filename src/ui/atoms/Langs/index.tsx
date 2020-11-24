@@ -47,6 +47,7 @@ const Label = styled.div`
   transition: 0.2s;
   border: 1px solid transparent;
   border-radius: 50px;
+  white-space: nowrap;
   cursor: default;
 
   &:after {

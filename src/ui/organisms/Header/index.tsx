@@ -5,7 +5,7 @@ import { Logo, Burger, Link, Langs } from "~/ui/atoms";
 import { Menu, Sidebar } from "~/ui/molecules";
 
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 export const data = [
   {
@@ -78,10 +78,14 @@ const HeaderLogo = styled(Logo)`
     width: auto;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     order: 0;
     left: 0;
     bottom: 0;
+    width: 120px;
+  `};
+
+  ${MEDIA.DESKTOP`
     width: 280px;
   `};
 `;
@@ -91,7 +95,7 @@ const HeaderMenu = styled(Menu)`
     display: none;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     display: block;
   `};
 `;
@@ -104,7 +108,7 @@ const Settings = styled.div`
     order: 0;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     order: 1;
   `};
 `;
@@ -114,7 +118,7 @@ const HeaderLangs = styled(Langs)`
     display: none;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     display: flex;
     margin-right: 24px;
   `};
@@ -123,11 +127,12 @@ const HeaderLangs = styled(Langs)`
 const Login = styled(Link)`
   font-size: 14px;
   color: #d8d8d8;
+  white-space: nowrap;
 `;
 
 const SignUp = styled(Link)`
   color: #fff;
-
+  white-space: nowrap;
   // hide signup on mobile
 
   ${MEDIA.PHONE`
@@ -156,7 +161,7 @@ const MobileBurger = styled(Burger)`
     order: 2;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     display: none;
   `};
 `;

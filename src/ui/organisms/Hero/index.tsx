@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 import { Title, Text, Icon, Button } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 import heroMobile from "~/static/hero-mobile.png";
+import heroTablet from "~/static/hero-tablet.png";
 import heroDesktop from "~/static/hero-desktop.png";
 
 import blur320 from "~/static/blur-320.png";
@@ -40,13 +41,16 @@ export const Hero = () => {
   return (
     <Background>
       <Wrap>
-        <Title level={1}>Trade Stocks, Forex, Options and Cryptos</Title>
+        <HeroTitle level={1}>
+          Trade Stocks, Forex, Options and Cryptos
+        </HeroTitle>
         <HeroText level={1}>
           Follow other investors, discover companies to believe in, invest with
           any.
         </HeroText>
         <Cta href="/to-open-free-account">Open free account</Cta>
         <HeroMobileImage src={heroMobile} alt="" />
+        <HeroTabletImage src={heroTablet} alt="" />
         <HeroDesktopImage src={heroDesktop} alt="" />
         <Bullets>
           {bulletData.map(({ icon, numbers, text }) => (
@@ -65,19 +69,21 @@ export const Hero = () => {
 const Background = styled.div`
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: contain;
 
   @media (min-width: 20em) {
+    background-size: contain;
     background-image: url(${blur320}),
       linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }
 
   @media (min-width: 26em) {
+    background-size: initial;
     background-image: url(${blur480}),
       linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }
 
   @media (min-width: 48em) {
+    background-size: contain;
     background-image: url(${blur960}),
       linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }
@@ -103,15 +109,34 @@ const Wrap = styled(Container)`
   `}
 `;
 
+const HeroTitle = styled(Title)`
+  ${MEDIA.TABLET`
+    max-width: 520px;
+    margin: 0 auto;
+  `}
+
+  ${MEDIA.DESKTOP`
+    max-width: 100%;
+  `}
+`;
+
 const HeroText = styled(Text)`
   margin-top: 16px;
+
   &[data-level="1"] {
     ${MEDIA.PHONE`
       font-size: 17px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.TABLET`
       font-size: 18px;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    `}
+
+    ${MEDIA.DESKTOP`
+      max-width: 100%;
     `}
   }
 `;
@@ -122,13 +147,37 @@ const Cta = styled(Button)`
 `;
 
 const HeroMobileImage = styled.img`
-  max-width: 265px;
   border-bottom: 1px solid #e2deeb;
   margin: 0 auto;
 
   ${MEDIA.PHONE`
     display: block;
+    max-width: 265px;
   `}
+
+  ${MEDIA.SMARTPHONE`
+    display: block;
+    max-width: 365px;
+  `}
+
+  ${MEDIA.TABLET`
+    display: none;
+  `};
+`;
+
+const HeroTabletImage = styled.img`
+  border-bottom: 1px solid #e2deeb;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 590px;
+
+  ${MEDIA.PHONE`
+    display: none;
+  `}
+
+  ${MEDIA.TABLET`
+    display: block;
+  `};
 
   ${MEDIA.DESKTOP`
     display: none;
@@ -175,7 +224,7 @@ const Bullet = styled.div`
     padding-bottom: 25px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     width: 25%;
   `};
 `;
@@ -193,10 +242,10 @@ const BulletIcon = styled(Icon)`
     }
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.SMARTPHONE`
     width: 71px;
     height: 71px;
-
+    
     img {
       width: 32px;
       height: 32px;

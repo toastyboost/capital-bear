@@ -17,8 +17,10 @@ export default LogIn;
 
 const LoginTitle = styled(Title)`
   width: 100%;
+  padding-left: 50px;
 `;
 
 const LoginDescription = styled(Text)`
   margin-top: 10px;
+  padding-left: 50px;
 `;

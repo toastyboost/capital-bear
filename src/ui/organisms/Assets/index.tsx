@@ -1,10 +1,10 @@
 import * as React from "react";
 import styled from "styled-components";
 import Slider from "react-slick";
-import { Text, Button } from "~/ui/atoms";
+import { Text } from "~/ui/atoms";
 import { Section } from "~/ui/molecules";
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 import plusWhite from "~/static/plus-white.svg";
 import plusBlack from "~/static/plus-black.svg";
@@ -30,7 +30,14 @@ const sliderSettings = {
       },
     },
     {
-      breakpoint: 960,
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 425,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -117,7 +124,7 @@ const Wrap = styled(Container)`
   overflow: hidden;
 
   ${MEDIA.PHONE`
-    padding: 0;
+    padding: 0 0 0 24px;
   `}
 
   ${MEDIA.DESKTOP`
@@ -136,13 +143,15 @@ const Wrap = styled(Container)`
 
   .slick-slider {
     width: 100%;
+  }
 
+  .slick-next {
     ${MEDIA.PHONE`
-      transform: translateX(24px);
+      right: 8px;
     `}
 
     ${MEDIA.DESKTOP`
-      transform: translateX(0);
+      right: -8px;
     `};
   }
 
@@ -152,7 +161,6 @@ const Wrap = styled(Container)`
 
   .slick-slide {
     margin: 0 8px;
-    /* transform: translateX(8px); */
   }
 `;
 
@@ -163,11 +171,13 @@ const Tabs = styled.div`
   flex-direction: row-reverse;
 
   ${MEDIA.PHONE`
-    margin: -20px 0 40px 24px;
+    margin: -20px 0 40px 0;
+    justify-content: flex-end;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     margin: -20px auto 40px auto;
+    justify-content: center;
   `};
 `;
 
@@ -197,16 +207,21 @@ const Tab = styled.div<any>`
 const Card = styled.div`
   background-color: #f9f9fb;
   border-radius: 5px;
-  width: 246px;
   height: 100%;
   display: flex;
   flex-direction: column;
 
   ${MEDIA.PHONE`
+    width: 246px;
     padding: 22px;
   `}
 
+  ${MEDIA.TABLET`
+    width: 234px;
+  `};
+
   ${MEDIA.DESKTOP`
+    width: 246px;
     padding: 33px;
   `};
 `;
@@ -293,6 +308,7 @@ const Cta = styled.a`
   transition: 0.2s;
   position: relative;
   box-shadow: 0 7px 14px -4px rgba(120, 110, 144, 0.13);
+
   span {
     opacity: 0;
   }
@@ -333,7 +349,7 @@ const Desclimer = styled.div`
     font-size: 12px;
   `}
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.SMARTPHONE`
     max-width: 100%;
     font-size: 14px;
   `};

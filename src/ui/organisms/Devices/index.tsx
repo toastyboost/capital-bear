@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { Title, Text, Button, Icon } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 import browsers from "~/static/browsers.svg";
 
@@ -47,7 +47,18 @@ export const Devices = () => {
 
 const Wrap = styled.div`
   background-color: #f9f9fb;
-  padding: 60px 0;
+
+  ${MEDIA.PHONE`
+    padding: 60px 0;
+  `}
+
+  ${MEDIA.TABLET`
+    padding: 60px 0 0 0;
+  `}
+  
+  ${MEDIA.DESKTOP`
+    padding: 60px 0;
+  `}
 `;
 
 const Browsers = styled.img`
@@ -66,21 +77,36 @@ const DevicesBlocks = styled.div`
   & > div {
     ${MEDIA.PHONE`
       &:nth-child(1) {
-        order: 1
+        order: 1;
       }
 
       &:nth-child(2) {
-        order: 0
+        order: 0;
+      }
+    `};
+
+    ${MEDIA.TABLET`
+      &:nth-child(1) {
+        display: none;
+      }
+
+      &:nth-child(2) {
+        width: 100%;
       }
     `};
 
     ${MEDIA.DESKTOP`
       &:nth-child(1) {
-        order: 0
+        display: block;
+      }
+
+      &:nth-child(1) {
+        order: 0;
       }
 
       &:nth-child(2) {
-        order: 1
+        order: 1;
+        width: 50%;
       }
     `};
 
@@ -101,7 +127,7 @@ const Device = styled.div`
     width: 100%;
   `};
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     width: 50%;
   `};
 `;
@@ -112,7 +138,14 @@ const Block = styled.div`
   height: 100%;
   justify-content: center;
 
+  ${MEDIA.PHONE`
+    align-items: center;
+    text-align: center;
+  `};
+
   ${MEDIA.DESKTOP`
+    text-align: left;
+    align-items: flex-start;
     padding-left: 30px;
   `};
 `;
@@ -121,17 +154,29 @@ const BlockIcon = styled(Icon)`
   width: 50px;
   height: 50px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 `;
 
 const BlockTitle = styled(Title)`
   width: 100%;
   padding-bottom: 15px;
+
+  ${MEDIA.TABLET`
+    max-width: 360px;
+  `};
+
+  ${MEDIA.DESKTOP`
+    max-width: 100%;
+  `};
 `;
 
 const BlockDescription = styled(Text)`
   width: 100%;
   color: #27262d;
+
+  ${MEDIA.TABLET`
+    max-width: 400px;
+  `};
 
   ${MEDIA.DESKTOP`
     max-width: 600px;

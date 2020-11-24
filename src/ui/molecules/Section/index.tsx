@@ -70,7 +70,7 @@ const SectionDescription = styled(Text)`
   width: 100%;
   color: #27262d;
 
-  ${MEDIA.DESKTOP`
+  ${MEDIA.TABLET`
     max-width: 600px;
   `};
 `;

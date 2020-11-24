@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Title, Text, Button } from "~/ui/atoms";
 import { Section } from "~/ui/molecules";
 import { MEDIA } from "~/libs/media";
-import { Container } from "~/styles";
+import { Container } from "~/ui/atoms";
 
 import toolbox1 from "~/static/toolbox-1.svg";
 import toolbox2 from "~/static/toolbox-2.svg";
@@ -14,7 +14,8 @@ import toolbox4 from "~/static/toolbox-4.svg";
 const toolboxData = [
   {
     title: "Practice account",
-    text: "Get notifications on important events and never miss on juicy trading opportunities",
+    text:
+      "Get notifications on important events and never miss on juicy trading opportunities",
     imageSrc: toolbox1,
     href: "/url",
   },
@@ -79,6 +80,11 @@ const Tool = styled.div`
     width: 100%;
   `}
 
+  ${MEDIA.TABLET`
+    margin: 0 auto;
+    max-width: 420px;
+  `};
+
   ${MEDIA.DESKTOP`
     width: 50%;
     margin: 0 30px;
@@ -101,8 +107,15 @@ const Content = styled.div`
     padding-top: 20px;
   `}
 
+  ${MEDIA.TABLET`
+    padding-left: 20px;
+    padding-right: 20px;
+  `}
+
   ${MEDIA.DESKTOP`
     padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
   `};
 `;

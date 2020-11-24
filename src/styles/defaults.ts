@@ -142,7 +142,7 @@ export const GlobalStyles = createGlobalStyle`
     transform: translateY(0);
 
     ${MEDIA.PHONE`
-      right: 32px;
+      right: -16px;
     `}
 
     ${MEDIA.DESKTOP`

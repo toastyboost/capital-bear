@@ -19,8 +19,10 @@ export default SignUp;
 
 const SignupTitle = styled(Title)`
   width: 100%;
+  padding-left: 50px;
 `;
 
 const SignupDescription = styled(Text)`
   margin-top: 10px;
+  padding-left: 50px;
 `;

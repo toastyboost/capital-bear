@@ -30,7 +30,7 @@ const Wrap = styled.p.attrs<Levels>(map)`
       line-height: 22px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.SMARTPHONE`
       font-size: 18px;
       line-height: 26px;
     `};
@@ -42,7 +42,7 @@ const Wrap = styled.p.attrs<Levels>(map)`
       line-height: 24px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.SMARTPHONE`
       font-size: 16px;
       line-height: 24px;
     `};
@@ -54,9 +54,9 @@ const Wrap = styled.p.attrs<Levels>(map)`
       line-height: 19px;
     `}
 
-    ${MEDIA.DESKTOP`
+    ${MEDIA.SMARTPHONE`
       font-size: 16px;
-      line-height: 22px;
+      line-height: 23px;
     `};
   }
 `;
