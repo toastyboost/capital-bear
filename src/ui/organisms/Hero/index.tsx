@@ -45,8 +45,8 @@ export const Hero = () => {
           Trade Stocks, Forex, Options and Cryptos
         </HeroTitle>
         <HeroText level={1}>
-          Follow other investors, discover companies to believe in, invest with
-          any.
+          Follow other investors, discover companies to believe in, invest
+          with&nbsp;any.
         </HeroText>
         <Cta href="/to-open-free-account">Open free account</Cta>
         <HeroMobileImage src={heroMobile} alt="" />

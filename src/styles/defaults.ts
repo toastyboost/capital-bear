@@ -17,8 +17,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   :root {
-    --main-font: "Gilroy", sans-serif;;
-    --text-font: "Manrope", Arial, Helvetica, sans-serif;
+    --main-font: "Gilroy", sans-serif;
+    --text-font: "Manrope", sans-serif;
     --primary: rgb(105, 57, 207);
     --warning: rgb(251, 86, 81);
     --text: #425466;
