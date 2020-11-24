@@ -104,11 +104,20 @@ const Wrap = styled(Container)`
 `;
 
 const HeroText = styled(Text)`
-  margin-top: 10px;
+  margin-top: 16px;
+  &[data-level="1"] {
+    ${MEDIA.PHONE`
+      font-size: 17px;
+    `}
+
+    ${MEDIA.DESKTOP`
+      font-size: 18px;
+    `}
+  }
 `;
 
 const Cta = styled(Button)`
-  margin: 24px auto 48px auto;
+  margin: 36px auto 48px auto;
   line-height: 56px;
 `;
 

@@ -62,6 +62,7 @@ const DevicesBlocks = styled.div`
   flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
+
   & > div {
     ${MEDIA.PHONE`
       &:nth-child(1) {
@@ -110,7 +111,10 @@ const Block = styled.div`
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  padding-left: 30px;
+
+  ${MEDIA.DESKTOP`
+    padding-left: 30px;
+  `};
 `;
 
 const BlockIcon = styled(Icon)`

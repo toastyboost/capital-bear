@@ -111,7 +111,7 @@ const StepTitle = styled(Title)`
   padding-bottom: 15px;
 
   ${MEDIA.DESKTOP`
-    max-width: 330px;
+    max-width: 355px;
   `}
 `;
 
@@ -147,6 +147,7 @@ const Tag = styled(Text)`
   display: inline-block;
   font-weight: 600;
   margin-bottom: 20px;
+  text-transform: uppercase;
 
   ${MEDIA.DESKTOP`
     align-self: flex-start;

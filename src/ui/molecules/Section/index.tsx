@@ -10,13 +10,21 @@ type Props = {
   description?: string;
 };
 
-export const Section: React.FC<Props> = ({ className, children, icon, title, description }) => {
+export const Section: React.FC<Props> = ({
+  className,
+  children,
+  icon,
+  title,
+  description,
+}) => {
   return (
     <Wrap className={className}>
       <Header className="section-header">
         <SectionIcon name={icon} />
         <SectionTitle level={2}>{title}</SectionTitle>
-        {description && <SectionDescription level={1}>{description}</SectionDescription>}
+        {description && (
+          <SectionDescription level={1}>{description}</SectionDescription>
+        )}
       </Header>
       <Content>{children}</Content>
     </Wrap>
@@ -50,7 +58,7 @@ const SectionIcon = styled(Icon)`
   width: 50px;
   height: 50px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
 `;
 
 const SectionTitle = styled(Title)`

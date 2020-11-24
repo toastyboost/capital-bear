@@ -13,7 +13,7 @@ import payments from "~/static/payments.svg";
 import { fetchAssets } from "../../../api";
 
 const sliderSettings = {
-  infinite: false,
+  infinite: true,
   variableWidth: true,
   speed: 900,
   slidesToShow: 4,

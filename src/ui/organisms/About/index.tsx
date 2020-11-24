@@ -9,7 +9,7 @@ import { Container } from "~/styles";
 import facebookIcon from "~/static/facebook.svg";
 
 const sliderSettings = {
-  infinite: false,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   speed: 900,
@@ -102,6 +102,7 @@ const Quote = styled.div`
   position: relative;
   text-align: center;
   background-color: #f9f9fb;
+  border-radius: 12px;
 
   ${MEDIA.PHONE`
     width: 270px !important;
