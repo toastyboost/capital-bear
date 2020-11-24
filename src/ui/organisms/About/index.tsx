@@ -105,7 +105,7 @@ const Quote = styled.div`
     }
   `}
 
-  ${MEDIA.SMARTPHONE`
+  ${MEDIA.TABLET`
     padding: 54px 110px 65px 110px;
 
     span {

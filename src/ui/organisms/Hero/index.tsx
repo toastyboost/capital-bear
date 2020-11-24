@@ -77,7 +77,7 @@ const Background = styled.div`
   }
 
   @media (min-width: 26em) {
-    background-size: initial;
+    background-size: contain;
     background-image: url(${blur480}),
       linear-gradient(180deg, #f1ecfb 0%, #f9f9fb 100%);
   }

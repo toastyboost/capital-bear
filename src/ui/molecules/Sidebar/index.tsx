@@ -64,7 +64,7 @@ const Side = styled.aside<{ isVisible: boolean }>`
   position: fixed;
   right: 0;
   top: 0;
-  max-width: 286px;
+  max-width: 270px;
   width: 100%;
   min-height: 100vh;
   height: 100%;
@@ -86,7 +86,7 @@ const Header = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgb(245, 245, 247);
-  padding: 10px 44px;
+  padding: 10px 34px;
 `;
 
 const Content = styled.div`
@@ -108,7 +108,7 @@ const SideBurger = styled(Burger)`
 `;
 
 const SidebarLink = styled(Link)`
-  padding: 20px 44px;
+  padding: 20px 34px;
 
   &:hover {
     background-color: rgb(245, 245, 247);
