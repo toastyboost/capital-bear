@@ -18,7 +18,7 @@ export const Burger = ({
 const width = 20;
 const height = 2;
 const radius = 10;
-const theme = "#fff";
+const theme = "#000";
 
 const Wrap = styled.div`
   position: relative;

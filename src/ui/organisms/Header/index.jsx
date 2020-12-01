@@ -33,7 +33,7 @@ export const Header = () => {
     <>
       <Wrap>
         <HeaderContainer>
-          <HeaderLogo type="white" />
+          <HeaderLogo type="black" />
           <HeaderMenu data={data} />
           <Settings>
             <HeaderLangs />
@@ -54,20 +54,21 @@ export const Header = () => {
 const Wrap = styled.header`
   position: relative;
   z-index: 101;
+  background-color: #fff;
 `;
 
 const HeaderContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 71px;
+  height: 64px;
 `;
 
 const HeaderLogo = styled(Logo)`
   position: relative;
 
   img {
-    max-width: 120px;
+    max-width: 146px;
     height: auto;
   }
 
@@ -87,6 +88,7 @@ const HeaderLogo = styled(Logo)`
 
   ${MEDIA.DESKTOP`
     width: 280px;
+    bottom: 1px;
   `};
 `;
 
@@ -126,12 +128,12 @@ const HeaderLangs = styled(Langs)`
 
 const Login = styled(Link)`
   font-size: 14px;
-  color: #d8d8d8;
+ 
   white-space: nowrap;
 `;
 
 const SignUp = styled(Link)`
-  color: #fff;
+  color: var(--primary);
   white-space: nowrap;
   // hide signup on mobile
 
@@ -141,14 +143,14 @@ const SignUp = styled(Link)`
 
   ${MEDIA.DESKTOP`
     display: block;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid var(--primary);
     border-radius: 50px;
     padding: 5px 16px 7px 16px;
     margin-left: 20px;
 
     &:hover {
       background-color: var(--primary);
-      border: 1px solid var(--primary);
+      color: #fff;
     }
   `};
 `;

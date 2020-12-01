@@ -23,6 +23,10 @@ const MenuLink = styled(Link)`
   margin: 0 20px;
   white-space: nowrap;
 
+  &:hover {
+    color: var(--primary);
+  }
+  
   ${MEDIA.TABLET`
     margin: 0 15px;
   `}

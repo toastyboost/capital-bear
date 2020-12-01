@@ -96,7 +96,6 @@ const Background = styled.div`
 
 const Wrap = styled(Container)`
   text-align: center;
-  margin-top: -70px;
   display: flex;
   flex-direction: column;
 

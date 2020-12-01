@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import arrow from "~/static/arrow-white.svg";
+import arrow from "~/static/arrow-black.svg";
  
 const langs = [
   {
@@ -37,7 +37,7 @@ export const Langs = ({ className }) => {
 };
 
 const Label = styled.div`
-  color: #fff;
+  color: rgb(68,67,98);
   line-height: 32px;
   padding: 0 16px 0 16px;
   transition: 0.2s;
