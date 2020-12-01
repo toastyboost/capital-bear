@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{szoc:function(n,e,t){"use strict";t.r(e);var c=t("q1tI"),u=t("17a/"),a=t("niKw");e.default=function(){return c.createElement(u.b,null,c.createElement(a.b,null))}}}]);
