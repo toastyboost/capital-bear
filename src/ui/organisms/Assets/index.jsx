@@ -47,8 +47,8 @@ const sliderSettings = {
 };
 
 export const TrendingAssets = () => {
-  const [assets, setAssets] = React.useState<any>(null);
-  const [activeTab, setActiveTab] = React.useState<any>("Forex");
+  const [assets, setAssets] = React.useState(null);
+  const [activeTab, setActiveTab] = React.useState("Forex");
 
   React.useEffect(() => {
     fetchAssets().then(setAssets);
@@ -74,7 +74,7 @@ export const TrendingAssets = () => {
 
           {assets && (
             <Slider {...sliderSettings}>
-              {assets[activeTab].map((asset: any) => (
+              {assets[activeTab].map((asset) => (
                 <AssetCard data={asset} key={asset.id} />
               ))}
             </Slider>
@@ -93,7 +93,7 @@ export const TrendingAssets = () => {
   );
 };
 
-export const AssetCard: React.FC<any> = ({ data }) => {
+export const AssetCard = ({ data }) => {
   const { price, change, logo, name, ticker } = data;
 
   return (
@@ -143,7 +143,6 @@ const Wrap = styled(Container)`
 
   .slick-slider {
     width: 100%;
-    overflow: hidden;
     max-height: 354px;
   }
 
@@ -183,7 +182,7 @@ const Tabs = styled.div`
   `};
 `;
 
-const Tab = styled.div<any>`
+const Tab = styled.div`
   cursor: pointer;
   font-size: 17px;
   font-weight: 600;

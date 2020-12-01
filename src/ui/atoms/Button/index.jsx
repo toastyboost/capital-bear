@@ -3,13 +3,7 @@ import styled from "styled-components";
 import { Link } from "~/ui/atoms";
 import arrowRight from "~/static/arrow-right.svg";
 
-type Props = {
-  className?: string;
-  type?: "ghost";
-  href: string;
-};
-
-export const Button: React.FC<Props> = ({ children, className, href, type }) => {
+export const Button = ({ children, className, href, type }) => {
   return (
     <Wrap className={className} href={href} type={type}>
       {children}
@@ -17,7 +11,7 @@ export const Button: React.FC<Props> = ({ children, className, href, type }) => 
   );
 };
 
-const Wrap = styled<any>(Link)`
+const Wrap = styled(Link)`
   font-family: "Manrope";
   background-color: var(--primary);
   font-size: 16px;

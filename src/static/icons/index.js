@@ -8,7 +8,7 @@ import assets from './assets.svg'
 import phone from './phone.svg'
 import chat from './chat.svg';
 
-export const icons: any = {
+export const icons = {
     user,
     download,
     check,

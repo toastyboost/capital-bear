@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { GenericLayout } from "~/ui/templates";
 import { Container } from "~/ui/atoms";
 
-export const MessageLayout: React.FC = ({ children }) => (
+export const MessageLayout = ({ children }) => (
   <GenericLayout isInside>
     <Section>{children}</Section>
   </GenericLayout>

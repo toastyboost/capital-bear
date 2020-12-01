@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { SystemLayout } from "~/ui/templates";
 import { Title, Text } from "~/ui/atoms";
 
-const PassForgot: React.FC = () => {
+const PassForgot = () => {
   return (
     <SystemLayout>
       <ForgotTitle level={3}>Forgot Password</ForgotTitle>

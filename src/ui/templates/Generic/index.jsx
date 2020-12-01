@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { InsideHeader, InsideFooter, Header, Footer } from "~/ui/organisms";
 import { GlobalStyles } from "~/styles/defaults";
 
-export const GenericLayout: React.FC<any> = ({
+export const GenericLayout = ({
   children,
   isInside = false,
 }) => (

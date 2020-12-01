@@ -1,13 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-type BurgerProps = {
-  className?: string;
-  isVisible: boolean;
-  onClick: (e: React.MouseEvent<HTMLDivElement>) => void;
-};
-
-export const Burger: React.FC<BurgerProps> = ({
+export const Burger = ({
   className,
   isVisible,
   onClick,
@@ -43,7 +37,7 @@ const Box = styled.div`
   position: relative;
 `;
 
-const Crest = styled.div<{ isActive: boolean }>`
+const Crest = styled.div`
   display: block;
   top: 50%;
   transform: ${(p) => (p.isActive ? "rotate(-45deg)" : "rotate(0deg)")};

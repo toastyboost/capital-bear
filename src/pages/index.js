@@ -10,7 +10,7 @@ import {
   About,
 } from "~/ui/organisms";
 
-const Index: React.FC = () => {
+const Index = () => {
   return (
     <GenericLayout>
       <Hero />

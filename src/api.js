@@ -5,8 +5,8 @@ const FININFO_GQL = '/api/graphql'; // TODO https://static.cdnpub.info/fininfo/a
 
 axios.defaults.withCredentials = true;
 
-const formatResult = (assets: any) =>
-  assets.map((asset: any) => ({
+const formatResult = (assets) =>
+  assets.map((asset) => ({
     id: asset.id,
     name: asset.name,
     logo: `${STATIC_FILES}${asset.multimedia.logo}`,
@@ -14,12 +14,12 @@ const formatResult = (assets: any) =>
     ticker: asset.ticker,
     change: asset.charts.d1.change.toFixed(2),
     type: asset.type,
-  })).reduce((acc: any, item: any) => ({
+  })).reduce((acc, item) => ({
     ...acc,
     ...(Boolean(item.type) && {
       [item.type]: [...(acc[item.type] || []), item]
     })
-  }), {} as any);
+  }), {});
 
 export const fetchAssets = async () => {
   return axios

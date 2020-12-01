@@ -10,8 +10,8 @@ import { Container } from "~/ui/atoms";
 import { data } from "~/ui/organisms/Header";
 import purpleArrow from "~/static/arrow-purple.svg";
 
-export const InsideHeader: React.FC = () => {
-  const [isVisible, setVisiblility] = React.useState<boolean>(false);
+export const InsideHeader = () => {
+  const [isVisible, setVisiblility] = React.useState(false);
 
   return (
     <>

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { SystemLayout } from "~/ui/templates";
 import { Title, Text } from "~/ui/atoms";
 
-const LogIn: React.FC = () => {
+const LogIn = () => {
   return (
     <SystemLayout>
       <LoginTitle level={3}>Sign up</LoginTitle>

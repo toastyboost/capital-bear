@@ -3,12 +3,7 @@ import styled from "styled-components";
 
 import { icons } from "~/static/icons";
 
-type Props = {
-  className?: string;
-  name: string;
-};
-
-export const Icon: React.FC<Props> = ({ className, name }) => {
+export const Icon = ({ className, name }) => {
   return (
     <Wrap className={className}>
       <Svg src={icons[name]} alt="" />

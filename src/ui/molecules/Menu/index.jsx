@@ -3,12 +3,7 @@ import styled from "styled-components";
 import { Link } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
 
-type Props = {
-  className?: string;
-  data: { path: string; title: string }[];
-};
-
-export const Menu: React.FC<Props> = ({ className, data }) => {
+export const Menu = ({ className, data }) => {
   return (
     <Wrap className={className}>
       {data.map(({ path, title }) => (

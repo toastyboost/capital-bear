@@ -26,8 +26,8 @@ export const data = [
   },
 ];
 
-export const Header: React.FC = () => {
-  const [isVisible, setVisiblility] = React.useState<boolean>(false);
+export const Header = () => {
+  const [isVisible, setVisiblility] = React.useState(false);
 
   return (
     <>

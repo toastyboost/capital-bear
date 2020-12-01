@@ -21,8 +21,6 @@ module.exports = {
     pathPrefix: null,
   },
   plugins: [
-    "gatsby-plugin-typescript",
-    "gatsby-plugin-typescript-checker",
     "gatsby-plugin-webpack-size",
     "gatsby-plugin-no-sourcemaps",
     {

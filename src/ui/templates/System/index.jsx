@@ -7,7 +7,7 @@ import { GDPR } from "~/ui/atoms";
 
 import { MEDIA } from "~/libs/media";
 
-export const SystemLayout: React.FC = ({ children }) => (
+export const SystemLayout = ({ children }) => (
   <GenericLayout isInside>
     <Section>
       <Left>

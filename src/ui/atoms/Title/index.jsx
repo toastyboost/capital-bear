@@ -2,23 +2,14 @@ import * as React from "react";
 import styled from "styled-components";
 import { MEDIA } from "~/libs/media";
 
-type Levels = {
-  level: 1 | 2 | 3 | 4;
-};
-
-type Props = {
-  className?: string;
-  dangerouslySetInnerHTML?: any;
-} & Levels;
-
 const levels = {
   1: "h1",
   2: "h2",
   3: "h3",
   4: "h4",
-} as any;
+};
 
-export const Title: React.FC<Props> = ({
+export const Title = ({
   className,
   children,
   level,
@@ -34,11 +25,11 @@ export const Title: React.FC<Props> = ({
   </Wrap>
 );
 
-const map = (props: Levels) => ({
+const map = (props) => ({
   "data-level": props.level,
 });
 
-const Wrap = styled.div.attrs<Levels>(map)`
+const Wrap = styled.div.attrs(map)`
   color: #27262d;
   font-weight: 600;
 

@@ -1,12 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-type LinkProps = {
-  className?: string;
-  href?: string;
-};
-
-export const Link: React.FC<LinkProps> = ({ children, className, href = "" }) => {
+export const Link = ({ children, className, href = "" }) => {
   return (
     <HrefLink href={href} className={className}>
       {children}

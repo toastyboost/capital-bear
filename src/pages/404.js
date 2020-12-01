@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const ErrorPage: React.FC = () => (
+const ErrorPage = () => (
   <>
     <h1>Not Found</h1>
   </>

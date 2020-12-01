@@ -5,7 +5,7 @@ import { Text, Link } from "~/ui/atoms";
 import check from "~/static/check.svg";
 import checkWhite from "~/static/check-white.svg";
 
-export const GDPR: React.FC<any> = ({ className }) => (
+export const GDPR = ({ className }) => (
   <Wrap className={className}>
     <GDPRText level={3}>
       We use cookies to understand how you use our site and to improve your

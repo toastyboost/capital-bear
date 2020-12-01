@@ -3,14 +3,7 @@ import styled from "styled-components";
 import { Title, Text, Icon } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
 
-type Props = {
-  className?: string;
-  icon: string;
-  title: string;
-  description?: string;
-};
-
-export const Section: React.FC<Props> = ({
+export const Section = ({
   className,
   children,
   icon,

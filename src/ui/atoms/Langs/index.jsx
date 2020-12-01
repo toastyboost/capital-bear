@@ -2,11 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 
 import arrow from "~/static/arrow-white.svg";
-
-type Props = {
-  className?: string;
-};
-
+ 
 const langs = [
   {
     name: "English",
@@ -18,7 +14,7 @@ const langs = [
   },
 ];
 
-export const Langs: React.FC<Props> = ({ className }) => {
+export const Langs = ({ className }) => {
   const [lang, setLang] = React.useState("English");
 
   return (

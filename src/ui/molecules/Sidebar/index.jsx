@@ -3,13 +3,7 @@ import styled from "styled-components";
 import { Link, Burger } from "~/ui/atoms";
 import { MEDIA } from "~/libs/media";
 
-type SidebarProps = {
-  data: { path: string; title: string }[];
-  isVisible: boolean;
-  toggler: any;
-};
-
-export const Sidebar: React.FC<SidebarProps> = ({
+export const Sidebar  = ({
   isVisible,
   toggler,
   data,
@@ -36,7 +30,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   );
 };
 
-const SideBackground = styled.div<{ isVisible: boolean }>`
+const SideBackground = styled.div`
   width: 100%;
   height: 100%;
   z-index: 103;
@@ -57,7 +51,7 @@ const SideBackground = styled.div<{ isVisible: boolean }>`
   `};
 `;
 
-const Side = styled.aside<{ isVisible: boolean }>`
+const Side = styled.aside`
   opacity: ${(p) => (p.isVisible ? 1 : 0)};
   visibility: ${(p) => (p.isVisible ? "inherit" : "hidden")};
   transform: translateX(${(p) => (p.isVisible ? 0 : "280px")});
