@@ -128,8 +128,11 @@ const HeaderLangs = styled(Langs)`
 
 const Login = styled(Link)`
   font-size: 14px;
- 
   white-space: nowrap;
+  
+  &:hover {
+    color: var(--primary);
+  }
 `;
 
 const SignUp = styled(Link)`
